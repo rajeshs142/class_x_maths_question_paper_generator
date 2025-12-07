@@ -1,0 +1,555 @@
+{
+  "chapter_name": "Real Numbers",
+  "file_name": "ch1_real_numbers.json",
+  "questions": [
+    {
+      "id": "ch1_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "Express 140 as a product of its prime factors:",
+      "options": ["2² × 5 × 7", "2² × 3 × 5", "2 × 5² × 7", "2 × 5 × 7"],
+      "answer": "(a) 2² × 5 × 7",
+      "explanation": "140 = 2 × 70 = 2 × 2 × 35 = 2 × 2 × 5 × 7."
+    },
+    {
+      "id": "ch1_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "Express 156 as a product of its prime factors:",
+      "options": ["2 × 3 × 13", "2² × 3 × 13", "2² × 3² × 13", "2 × 3² × 13"],
+      "answer": "(b) 2² × 3 × 13",
+      "explanation": "156 = 2 × 78 = 2 × 2 × 39 = 2 × 2 × 3 × 13."
+    },
+    {
+      "id": "ch1_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "The prime factorization of 3825 is:",
+      "options": ["3 × 5² × 17", "3² × 5 × 17", "3² × 5² × 17", "3 × 5 × 17"],
+      "answer": "(c) 3² × 5² × 17",
+      "explanation": "3825 = 3 × 3 × 5 × 5 × 17."
+    },
+    {
+      "id": "ch1_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "The prime factorization of 5005 is:",
+      "options": ["5 × 7 × 11 × 13", "5 × 7 × 13 × 17", "5 × 11 × 13 × 17", "5 × 7 × 9 × 11"],
+      "answer": "(a) 5 × 7 × 11 × 13",
+      "explanation": "5005 = 5 × 1001 = 5 × 7 × 143 = 5 × 7 × 11 × 13."
+    },
+    {
+      "id": "ch1_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2020", "ssm"],
+      "text": "The exponent of 2 in the prime factorisation of 144 is:",
+      "options": ["4", "5", "6", "3"],
+      "answer": "(a) 4",
+      "explanation": "144 = 12 × 12 = (2²×3) × (2²×3) = 2⁴ × 3². Exponent of 2 is 4."
+    },
+    {
+      "id": "ch1_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The sum of exponents of prime factors in the prime-factorisation of 196 is:",
+      "options": ["3", "4", "5", "2"],
+      "answer": "(b) 4",
+      "explanation": "196 = 2² × 7². Sum of exponents = 2 + 2 = 4."
+    },
+    {
+      "id": "ch1_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2021", "ssm"],
+      "text": "The HCF of 96 and 404 is:",
+      "options": ["4", "2", "1", "3"],
+      "answer": "(a) 4",
+      "explanation": "96 = 2^5 × 3; 404 = 2² × 101. HCF = 2² = 4."
+    },
+    {
+      "id": "ch1_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq", "ssm"],
+      "text": "If two positive integers a and b are written as a = x³y² and b = xy³, where x, y are prime numbers, then HCF(a, b) is:",
+      "options": ["xy", "xy²", "x³y³", "x²y²"],
+      "answer": "(b) xy²",
+      "explanation": "HCF is the product of the smallest power of each common prime factor. x¹ and y²."
+    },
+    {
+      "id": "ch1_1m_09",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq", "ssm"],
+      "text": "If two positive integers p and q can be expressed as p = ab² and q = a³b; a, b being prime numbers, then LCM(p, q) is:",
+      "options": ["ab", "a²b²", "a³b²", "a³b³"],
+      "answer": "(c) a³b²",
+      "explanation": "LCM is the product of the greatest power of each prime factor. a³ and b²."
+    },
+    {
+      "id": "ch1_1m_10",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the HCF of 65 and 117 is expressible in the form 65m – 117, then the value of m is:",
+      "options": ["4", "2", "1", "3"],
+      "answer": "(b) 2",
+      "explanation": "HCF(65, 117) = 13. So, 65m - 117 = 13 => 65m = 130 => m = 2."
+    },
+    {
+      "id": "ch1_1m_11",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "The least number that is divisible by all the numbers from 1 to 10 (both inclusive) is:",
+      "options": ["10", "100", "504", "2520"],
+      "answer": "(d) 2520",
+      "explanation": "LCM(1,2,3,4,5,6,7,8,9,10) = 2520."
+    },
+    {
+      "id": "ch1_1m_12",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If the HCF of two numbers is 1, then the two numbers are called:",
+      "options": ["Composite", "Twin primes", "Co-prime", "Perfect numbers"],
+      "answer": "(c) Co-prime",
+      "explanation": "Definition of co-prime numbers."
+    },
+    {
+      "id": "ch1_1m_13",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The product of a non-zero rational and an irrational number is:",
+      "options": ["always irrational", "always rational", "rational or irrational", "one"],
+      "answer": "(a) always irrational",
+      "explanation": "Property of Real Numbers."
+    },
+    {
+      "id": "ch1_1m_14",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "For some integer m, every even integer is of the form:",
+      "options": ["m", "m + 1", "2m", "2m + 1"],
+      "answer": "(c) 2m",
+      "explanation": "Even numbers are multiples of 2."
+    },
+    {
+      "id": "ch1_1m_15",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "For some integer q, every odd integer is of the form:",
+      "options": ["q", "q + 1", "2q", "2q + 1"],
+      "answer": "(d) 2q + 1",
+      "explanation": "Odd numbers are (Multiple of 2) + 1."
+    },
+    {
+      "id": "ch1_1m_16",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If LCM(x, 18) = 36 and HCF(x, 18) = 2, then x is:",
+      "options": ["2", "3", "4", "1"],
+      "answer": "(c) 4",
+      "explanation": "LCM × HCF = Product of numbers. 36 × 2 = 18x => 72 = 18x => x = 4."
+    },
+    {
+      "id": "ch1_1m_17",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The ratio of LCM and HCF of the least prime and the least composite number is:",
+      "options": ["1 : 2", "2 : 1", "1 : 1", "1 : 3"],
+      "answer": "(b) 2 : 1",
+      "explanation": "Least prime=2, Least composite=4. LCM(2,4)=4, HCF(2,4)=2. Ratio 4:2 = 2:1."
+    },
+    {
+      "id": "ch1_1m_18",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The largest number which divides 70 and 125, leaving remainders 5 and 8, respectively, is:",
+      "options": ["13", "65", "875", "1750"],
+      "answer": "(a) 13",
+      "explanation": "Find HCF of (70-5) and (125-8) => HCF(65, 117) = 13."
+    },
+    {
+      "id": "ch1_1m_19",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Decimal expansion of 23/(2³5²) will be:",
+      "options": ["Terminating", "Non-terminating repeating", "Non-terminating non-repeating", "None of these"],
+      "answer": "(a) Terminating",
+      "explanation": "Denominator is of form 2^n × 5^m."
+    },
+    {
+      "id": "ch1_1m_20",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "n² - 1 is divisible by 8, if n is:",
+      "options": ["an integer", "a natural number", "an odd integer", "an even integer"],
+      "answer": "(c) an odd integer",
+      "explanation": "Let n=3, 9-1=8 (divisible). Let n=5, 25-1=24 (divisible)."
+    },
+    {
+      "id": "ch1_1m_21",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The H.C.F. of two numbers is 16 and their product is 3072. Then their L.C.M. = 162.\nReason (R): If a and b are two positive integers, then H.C.F. × L.C.M. = a × b.",
+      "options": ["Both A and R are true and R is correct explanation of A", "Both A and R are true but R is not correct explanation", "A is true but R is false", "A is false but R is true"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "LCM = Product/HCF = 3072/16 = 192. Assertion says 162, which is false."
+    },
+    {
+      "id": "ch1_1m_22",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): √2 is an irrational number.\nReason (R): If p is a prime number, then √p is an irrational number.",
+      "options": ["Both A and R are true and R is correct explanation of A", "Both A and R are true but R is not correct explanation", "A is true but R is false", "A is false but R is true"],
+      "answer": "(a) Both A and R are true and R is correct explanation of A"
+    },
+    {
+      "id": "ch1_1m_23",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): 13/3125 is a terminating decimal fraction.\nReason (R): If q = 2^n 5^m where n, m are non-negative integers, then p/q is a terminating decimal fraction.",
+      "options": ["Both A and R are true and R is correct explanation of A", "Both A and R are true but R is not correct explanation", "A is true but R is false", "A is false but R is true"],
+      "answer": "(a) Both A and R are true and R is correct explanation of A"
+    },
+    {
+      "id": "ch1_1m_24",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): 2 is a rational number.\nReason (R): The square roots of all positive integers are irrational.",
+      "options": ["Both A and R are true and R is correct explanation of A", "Both A and R are true but R is not correct explanation", "A is true but R is false", "A is false but R is true"],
+      "answer": "(c) A is true but R is false",
+      "explanation": "√4 = 2 (Rational), so R is false."
+    },
+    {
+      "id": "ch1_1m_25",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): HCF of (11, 17) is 1.\nReason (R): If p and q are primes, then HCF(p, q) = 1.",
+      "options": ["Both A and R are true and R is correct explanation of A", "Both A and R are true but R is not correct explanation", "A is true but R is false", "A is false but R is true"],
+      "answer": "(a) Both A and R are true and R is correct explanation of A"
+    },
+    {
+      "id": "ch1_1m_26",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2023"],
+      "text": "The ratio of HCF to LCM of the least composite number and the least prime number is:",
+      "options": ["1:2", "2:1", "1:1", "1:3"],
+      "answer": "(a) 1:2",
+      "explanation": "Least composite=4, least prime=2. HCF(2,4)=2, LCM(2,4)=4. Ratio 2:4 = 1:2."
+    },
+    {
+      "id": "ch1_1m_27",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2023"],
+      "text": "The number (5 - 3√5 + √5) is:",
+      "options": ["an integer", "a rational number", "an irrational number", "a whole number"],
+      "answer": "(c) an irrational number",
+      "explanation": "Simplify: 5 - 2√5. Since √5 is irrational, the result is irrational."
+    },
+
+    {
+      "id": "ch1_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the LCM and HCF of 26 and 91 and verify that LCM × HCF = product of the two numbers.",
+      "answer": "LCM=182, HCF=13"
+    },
+    {
+      "id": "ch1_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the LCM and HCF of 510 and 92 by the prime factorisation method.",
+      "answer": "LCM=23460, HCF=2"
+    },
+    {
+      "id": "ch1_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Given that HCF (306, 657) = 9, find LCM (306, 657).",
+      "answer": "22338"
+    },
+    {
+      "id": "ch1_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "Check whether 6^n can end with the digit 0 for any natural number n.",
+      "answer": "No, prime factors do not contain 5."
+    },
+    {
+      "id": "ch1_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Explain why 7 × 11 × 13 + 13 is a composite number.",
+      "answer": "13(77+1) = 13×78. Has factors other than 1 and itself."
+    },
+    {
+      "id": "ch1_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Explain why 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5 is a composite number.",
+      "answer": "5(1008+1) = 5×1009. Has factors other than 1 and itself."
+    },
+    {
+      "id": "ch1_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Can the number 4^n, n being a natural number, end with the digit 0? Give reasons.",
+      "answer": "No, 4^n = (2^2)^n. Only prime factor is 2. No 5."
+    },
+    {
+      "id": "ch1_2m_08",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the HCF and LCM of 6 and 20 by the prime factorisation method.",
+      "answer": "HCF=2, LCM=60"
+    },
+    {
+      "id": "ch1_2m_09",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the HCF and LCM of 404 and 96 and verify that HCF × LCM = Product of the two given numbers.",
+      "answer": "HCF=4, LCM=9696"
+    },
+    {
+      "id": "ch1_2m_10",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the simplest form of √288 / √128.",
+      "answer": "3/2"
+    },
+    {
+      "id": "ch1_2m_11",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Given that √2 is irrational, prove that 5 + 3√2 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_2m_12",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Two numbers are in the ratio 5:6. If their LCM is 120, find their HCF.",
+      "answer": "4"
+    },
+    {
+      "id": "ch1_2m_13",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the largest number which divides 245 and 1029 leaving remainder 5 in each case.",
+      "answer": "16"
+    },
+    {
+      "id": "ch1_2m_14",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Show that 5 + 2√7 is an irrational number, where √7 is given to be an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_2m_15",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Write the smallest number which is divisible by both 306 and 657.",
+      "answer": "LCM = 22338"
+    },
+    {
+      "id": "ch1_2m_16",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If LCM(x, 18) = 36 and HCF(x, 18) = 2, find x.",
+      "answer": "x = 4"
+    },
+    {
+      "id": "ch1_2m_17",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the HCF and LCM of 12, 15 and 21 by the prime factorisation method.",
+      "answer": "HCF=3, LCM=420"
+    },
+    {
+      "id": "ch1_2m_18",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the HCF and LCM of 17, 23 and 29 by the prime factorisation method.",
+      "answer": "HCF=1, LCM=11339"
+    },
+    {
+      "id": "ch1_2m_19",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the HCF and LCM of 8, 9 and 25 by the prime factorisation method.",
+      "answer": "HCF=1, LCM=1800"
+    },
+    {
+      "id": "ch1_2m_20",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Prove that 3 + √5 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+
+    {
+      "id": "ch1_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that √2 is an irrational number.",
+      "answer": "Standard theorem proof."
+    },
+    {
+      "id": "ch1_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that √3 is an irrational number.",
+      "answer": "Standard theorem proof."
+    },
+    {
+      "id": "ch1_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "Prove that √5 is an irrational number.",
+      "answer": "Standard theorem proof."
+    },
+    {
+      "id": "ch1_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that 3 + 2√5 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that 5 - √3 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that 1/√2 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_07",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that 7√5 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_08",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that 6 + √2 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_09",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm", "pyq"],
+      "text": "Find the largest number which divides 2053 and 967 leaving remainder 5 and 7 respectively.",
+      "answer": "64"
+    },
+    {
+      "id": "ch1_3m_10",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Three bells toll at intervals of 9, 12, 15 minutes respectively. If they start tolling together, after what time will they next toll together?",
+      "answer": "180 minutes (3 hours)"
+    },
+    {
+      "id": "ch1_3m_11",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A merchant has 120 litres of oil of one kind, 180 litres of another kind and 240 litres of third kind. He wants to sell the oil by filling the three kinds of oil in tins of equal capacity. What should be the greatest capacity of such a tin?",
+      "answer": "60 litres"
+    },
+    {
+      "id": "ch1_3m_12",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point?",
+      "answer": "36 minutes"
+    },
+    {
+      "id": "ch1_3m_13",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Prove that 2√3/5 is an irrational number.",
+      "answer": "Proof by contradiction."
+    },
+    {
+      "id": "ch1_3m_14",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The length, breadth and height of a room are 8m 50cm, 6m 25cm and 4m 75cm respectively. Find the length of the longest rod that can measure the dimensions of the room exactly.",
+      "answer": "25 cm"
+    },
+    {
+      "id": "ch1_3m_15",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "On a morning walk, three persons step off together. Their steps measure 40 cm, 42 cm and 45 cm respectively. What is the minimum distance each should walk so that all can cover the same distance in complete steps?",
+      "answer": "2520 cm"
+    }
+  ]
+}
