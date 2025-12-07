@@ -242,20 +242,41 @@ function renderHistoryTable() {
     tbody.innerHTML = '';
 
     if(history.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="3" class="p-4 text-center text-gray-400">No history yet.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-gray-400">No history yet.</td></tr>`;
         return;
     }
 
     history.forEach(rec => {
+        const starClass = rec.starred ? "text-yellow-400 fill-current" : "text-gray-300 hover:text-yellow-400";
+        const rowBg = rec.starred ? "bg-yellow-50" : "hover:bg-gray-50";
+
+        // Format Date: "Oct 24, 2023, 10:45 AM"
+        const dateObj = new Date(rec.id); // ID is timestamp, accurate source
+        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const timeStr = dateObj.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+        const fullDateTime = `${dateStr}, <span class="text-gray-400 text-[10px]">${timeStr}</span>`;
+
         const row = `
-            <tr class="border-b hover:bg-gray-50 transition">
-                <td class="p-2 text-xs text-gray-500">${rec.date.split(',')[0]}</td>
+            <tr class="border-b ${rowBg} transition">
+                <td class="p-2 w-8 text-center">
+                    <button onclick="toggleStar(${rec.id})" title="${rec.starred ? 'Unstar' : 'Star this paper'}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ${starClass}" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </button>
+                </td>
+                
+                <!-- Date & Time Column -->
+                <td class="p-2 text-xs font-mono text-gray-600 whitespace-nowrap">${fullDateTime}</td>
+                
                 <td class="p-2 font-medium text-gray-700 text-xs truncate max-w-xs" title="${rec.criteria}">${rec.criteria}</td>
+                
                 <td class="p-2 flex items-center gap-3">
-                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs tracking-wider">View</button>
-                    
+                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs uppercase tracking-wider">View</button>
                     <button onclick="deletePaper(${rec.id})" class="text-red-400 hover:text-red-600" title="Delete">
-Delete
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
                     </button>
                 </td>
             </tr>
