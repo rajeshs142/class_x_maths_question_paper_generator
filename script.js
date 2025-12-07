@@ -100,7 +100,7 @@ function handleGenerate() {
     }
 
     renderPaper(paper);
-    savePaper(paper, metaText);
+    addPaperToHistory(paper, metaText);
     
     document.getElementById('dashboard').classList.add('hidden');
     document.getElementById('paper-view').classList.remove('hidden');
@@ -235,13 +235,77 @@ window.loadPaperByIds = function(ids, criteria) {
     document.getElementById('paper-meta').innerText = criteria;
 }
 
-// 10. History Table Renderer
+window.loadPaperFromHistory = function(id) {
+    const history = getHistoryData(); // From storage.js
+    const paperRecord = history.find(p => p.id === id);
+    
+    if (paperRecord) {
+        // Reconstruct paper from IDs
+        let paper = [];
+        ALL_QUESTIONS_DATA.forEach(ch => {
+            const found = ch.questions.filter(q => paperRecord.questions.includes(q.id));
+            paper.push(...found);
+        });
+
+        // Sort: 1M -> 5M
+        paper.sort((a, b) => a.marks - b.marks);
+
+        renderPaper(paper);
+        
+        // Update UI
+        document.getElementById('dashboard').classList.add('hidden');
+        document.getElementById('paper-view').classList.remove('hidden');
+        document.getElementById('controls').classList.remove('hidden');
+        document.getElementById('paper-meta').innerText = paperRecord.criteria;
+    } else {
+        alert("Paper not found in history.");
+    }
+};
+
+// 7. Toggle Star
+window.toggleStar = function(id) {
+    let history = getHistoryData();
+    const paper = history.find(p => p.id === id);
+    
+    if (paper) {
+        paper.starred = !paper.starred;
+        // Sort: Starred on top, then by Date
+        history.sort((a, b) => (b.starred - a.starred) || (b.id - a.id));
+        
+        saveHistoryData(history); // Save to DB
+        renderHistoryTable(); // Re-render UI
+    }
+};
+
+// 8. Delete Paper
+window.deletePaper = function(id) {
+    if(!confirm("Are you sure you want to delete this paper?")) return;
+
+    let history = getHistoryData();
+    history = history.filter(p => p.id !== id);
+    
+    saveHistoryData(history);
+    renderHistoryTable();
+};
+
+// 9. Clear History
+window.clearHistory = function() {
+    if(confirm("Delete all history? (Starred papers will be kept)")) {
+        let history = getHistoryData();
+        const saved = history.filter(p => p.starred);
+        
+        saveHistoryData(saved);
+        renderHistoryTable();
+    }
+};
+
+// 10. Render History Table
 function renderHistoryTable() {
-    const history = getHistory(); 
+    const history = getHistoryData(); // From storage.js
     const tbody = document.getElementById('history-table-body');
     tbody.innerHTML = '';
 
-    if(history.length === 0) {
+    if (history.length === 0) {
         tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-gray-400">No history yet.</td></tr>`;
         return;
     }
@@ -250,8 +314,8 @@ function renderHistoryTable() {
         const starClass = rec.starred ? "text-yellow-400 fill-current" : "text-gray-300 hover:text-yellow-400";
         const rowBg = rec.starred ? "bg-yellow-50" : "hover:bg-gray-50";
 
-        // Format Date: "Oct 24, 2023, 10:45 AM"
-        const dateObj = new Date(rec.id); // ID is timestamp, accurate source
+        // Format Date
+        const dateObj = new Date(rec.id);
         const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         const timeStr = dateObj.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
         const fullDateTime = `${dateStr}, <span class="text-gray-400 text-[10px]">${timeStr}</span>`;
@@ -265,15 +329,12 @@ function renderHistoryTable() {
                         </svg>
                     </button>
                 </td>
-                
-                <!-- Date & Time Column -->
                 <td class="p-2 text-xs font-mono text-gray-600 whitespace-nowrap">${fullDateTime}</td>
-                
                 <td class="p-2 font-medium text-gray-700 text-xs truncate max-w-xs" title="${rec.criteria}">${rec.criteria}</td>
-                
                 <td class="p-2 flex items-center gap-3">
-                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs tracking-wider">View</button>
-                    <button onclick="deletePaper(${rec.id})" class="text-red-400 hover:text-red-600" title="Delete">Delete
+                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs  tracking-wider">View</button>
+                    <button onclick="deletePaper(${rec.id})" class="text-red-400 hover:text-red-600" title="Delete">
+Delete
                     </button>
                 </td>
             </tr>
