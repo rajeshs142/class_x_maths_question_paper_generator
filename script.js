@@ -242,7 +242,7 @@ function renderHistoryTable() {
     tbody.innerHTML = '';
 
     if(history.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="3" class="p-4 text-center text-gray-400">No history yet. Generate a paper!</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="3" class="p-4 text-center text-gray-400">No history yet.</td></tr>`;
         return;
     }
 
@@ -250,9 +250,13 @@ function renderHistoryTable() {
         const row = `
             <tr class="border-b hover:bg-gray-50 transition">
                 <td class="p-2 text-xs text-gray-500">${rec.date.split(',')[0]}</td>
-                <td class="p-2 font-medium text-gray-700 truncate max-w-xs" title="${rec.criteria}">${rec.criteria}</td>
-                <td class="p-2">
-                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs uppercase tracking-wider">View</button>
+                <td class="p-2 font-medium text-gray-700 text-xs truncate max-w-xs" title="${rec.criteria}">${rec.criteria}</td>
+                <td class="p-2 flex items-center gap-3">
+                    <button onclick="loadPaperFromHistory(${rec.id})" class="text-indigo-600 hover:text-indigo-800 font-bold text-xs tracking-wider">View</button>
+                    
+                    <button onclick="deletePaper(${rec.id})" class="text-red-400 hover:text-red-600" title="Delete">
+Delete
+                    </button>
                 </td>
             </tr>
         `;

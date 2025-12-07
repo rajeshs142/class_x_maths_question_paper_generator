@@ -5,6 +5,7 @@ function getRandom(arr, count) {
     return shuffled.slice(0, count);
 }
 
+// Check if a question matches ANY of the selected sources
 function filterBySource(questions, sources) {
     return questions.filter(q => {
         return q.source.some(s => sources.includes(s));
@@ -14,76 +15,80 @@ function filterBySource(questions, sources) {
 function generateBoardPaper(allData, selectedSources) {
     let paper = [];
     
-    // Separate pools for standard questions and AR questions
+    // Pools to hold questions before organizing them into sections
     let pool = {
         '1m': [], '2m': [], '3m': [], '5m': [], '4m': [], 'ar': []
     };
 
-    // 1. Collect questions from all chapters
-    allData.forEach(chapterData => {
-        // Filter by source first
-        let availableQuestions = filterBySource(chapterData.questions, selectedSources);
+    // 1. Iterate through the Blueprint
+    BOARD_BLUEPRINT.forEach(rule => {
+        const chapterData = allData.find(ch => ch.chapter_name === rule.chapter);
         
-        // Fallback to all questions if filtered pool is empty to prevent crashes
-        if(availableQuestions.length === 0) {
-            availableQuestions = chapterData.questions;
+        if (!chapterData) {
+            console.error(`Missing Chapter Data: ${rule.chapter}`);
+            return;
         }
 
-        // Separate Assertion-Reason questions immediately
-        const arQuestions = availableQuestions.filter(q => q.type === 'assertion_reason');
-        pool['ar'].push(...arQuestions);
+        // 1. Get questions from SELECTED sources first
+        const sourceFilteredQuestions = filterBySource(chapterData.questions, selectedSources);
 
-        // Collect other questions based on Blueprint
-        // We find the blueprint rule for this chapter
-        const rule = BOARD_BLUEPRINT.find(r => r.chapter === chapterData.chapter_name);
-        
-        if (rule) {
-            for (const [marks, count] of Object.entries(rule.breakdown)) {
-                if (count > 0) {
-                    // Filter candidates for this mark category
-                    // Crucial: Exclude AR questions from the '1m' pool here, we handle them separately
-                    const candidates = availableQuestions.filter(q => q.marks == marks && q.type !== 'assertion_reason');
-                    
-                    // Pick random questions based on blueprint count
-                    // Note: For 1M, we might pick fewer if some slots are reserved for AR, 
-                    // but usually ARs are *additional* to the standard 18 MCQs in a 20Q section.
-                    // The standard pattern is 18 MCQs + 2 ARs = 20 Total.
-                    // If blueprint says "3" for 1M, we take 3 MCQs. 
-                    // We will forcefully append 2 ARs at the end of Section A regardless of chapter distribution.
-                    
-                    const picked = getRandom(candidates, count);
-                    pool[marks + 'm'].push(...picked);
+        for (const [marks, count] of Object.entries(rule.breakdown)) {
+            if (count > 0) {
+                // --- STRATEGY: Try Selected Source -> Fallback to All Sources ---
+
+                // Step A: Try Selected Sources
+                let candidates = sourceFilteredQuestions.filter(q => q.marks == marks);
+
+                // Exclude AR from standard 1M pool
+                if (marks == 1) {
+                    candidates = candidates.filter(q => q.type !== 'assertion_reason');
                 }
+
+                // Step B: FALLBACK if not enough questions
+                if (candidates.length < count) {
+                    console.warn(`[Fallback] ${rule.chapter}: Not enough ${marks}M Qs in ${selectedSources}. Searching ALL sources.`);
+                    
+                    let allSourceCandidates = chapterData.questions.filter(q => q.marks == marks);
+                    
+                    if (marks == 1) {
+                        allSourceCandidates = allSourceCandidates.filter(q => q.type !== 'assertion_reason');
+                    }
+                    
+                    // Use the full pool
+                    candidates = allSourceCandidates;
+                }
+
+                // Step C: Pick Random
+                const picked = getRandom(candidates, count);
+                pool[marks + 'm'].push(...picked);
             }
         }
+
+        // Special Collection for Assertion-Reason (Collect from ALL sources to be safe)
+        const arCandidates = chapterData.questions.filter(q => q.type === 'assertion_reason');
+        pool['ar'].push(...arCandidates);
     });
 
-    // 2. Construct Section A (1 Mark)
-    // Constraint: 18 MCQs + 2 ARs (Total 20)
-    
+    // 2. Construct Section A (18 MCQs + 2 ARs)
     let sectionA_MCQs = pool['1m'];
     
-    // If we have more than 18 MCQs selected by blueprint, trim to 18 to make room for AR
+    // Trim to 18
     if (sectionA_MCQs.length > 18) {
         sectionA_MCQs = getRandom(sectionA_MCQs, 18);
-    } 
-    // If we have fewer than 18, we just keep what we have (or could try to fetch more, but let's stick to blueprint)
-
-    // Select exactly 2 Assertion-Reason questions from the global AR pool
-    let finalARs = [];
-    if (pool['ar'].length >= 2) {
-        finalARs = getRandom(pool['ar'], 2);
-    } else {
-        // Fallback: If not enough ARs in selected source, try ALL sources
-        const allARs = [];
-        allData.forEach(ch => {
-            allARs.push(...ch.questions.filter(q => q.type === 'assertion_reason'));
-        });
-        finalARs = getRandom(allARs, 2);
     }
 
-    // Combine for Section A
-    // MCQs first (Q1-18), then ARs (Q19-20)
+    // Select exactly 2 ARs
+    let finalARs = [];
+    if (pool['ar'].length >= 2) {
+        // Try to prefer selected sources
+        let preferredAR = filterBySource(pool['ar'], selectedSources);
+        if (preferredAR.length >= 2) {
+             finalARs = getRandom(preferredAR, 2);
+        } else {
+             finalARs = getRandom(pool['ar'], 2);
+        }
+    }
+
     paper.push(...sectionA_MCQs);
     paper.push(...finalARs);
 
@@ -106,12 +111,18 @@ function generateCustomPaper(allData, chapterNames, totalMarks, selectedSources,
 
     let pool = [];
     activeChapters.forEach(ch => {
-        const validQuestions = ch.questions.filter(q => {
+        // Apply Fallback logic here too? 
+        // For custom, we usually respect the filter strictly, but we can be lenient.
+        
+        let validQuestions = ch.questions.filter(q => {
             const sourceMatch = q.source.some(s => selectedSources.includes(s));
             const qMark = parseInt(q.marks);
             const markMatch = allowedMarks.includes(qMark);
             return sourceMatch && markMatch;
         });
+
+        // If Custom Mode yields ZERO questions for a chapter because of source, 
+        // we can optionally fallback. For now, let's keep Custom strict.
         pool.push(...validQuestions);
     });
 
@@ -124,15 +135,14 @@ function generateCustomPaper(allData, chapterNames, totalMarks, selectedSources,
 
         if (!paper.some(p => p.id === q.id)) {
             const qMark = parseInt(q.marks);
-            if ((currentMarks + qMark <= totalMarks) || (currentMarks < totalMarks && (currentMarks + qMark - totalMarks) <= 2)) {
+            // Allow slight overflow (up to 3 marks) to fit big questions at the end
+            if ((currentMarks + qMark <= totalMarks) || (currentMarks < totalMarks && (currentMarks + qMark - totalMarks) <= 3)) {
                 paper.push(q);
                 currentMarks += qMark;
             }
         }
     }
     
-    // Sort custom paper by marks
     paper.sort((a, b) => a.marks - b.marks);
-
     return paper;
 }
