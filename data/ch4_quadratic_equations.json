@@ -1,0 +1,271 @@
+{
+  "chapter_name": "Quadratic Equations",
+  "file_name": "ch4_quadratic_equations.json",
+  "questions": [
+    
+    {
+      "id": "ch4_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq", "ssm"],
+      "text": "Which of the following is a quadratic equation?",
+      "options": ["x² + 3x + 1 = (x - 2)²", "x(x + 1) + 8 = (x + 2)(x - 2)", "x(2x + 3) = x² + 1", "(x + 2)³ = x³ - 4"],
+      "answer": "(c) x(2x + 3) = x² + 1",
+      "explanation": "Simplifying (c) gives 2x² + 3x = x² + 1 => x² + 3x - 1 = 0 (Degree 2). Others cancel out x² or result in degree 1 or 3."
+    },
+    {
+      "id": "ch4_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The discriminant of the quadratic equation 2x² - 4x + 3 = 0 is:",
+      "options": ["-8", "8", "-4", "4"],
+      "answer": "(a) -8",
+      "explanation": "D = b² - 4ac = (-4)² - 4(2)(3) = 16 - 24 = -8."
+    },
+    {
+      "id": "ch4_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The roots of the equation x² + 5x - 1 = 0 are:",
+      "options": ["Real and distinct", "Not real", "Real and equal", "Rational"],
+      "answer": "(a) Real and distinct",
+      "explanation": "D = 25 - 4(1)(-1) = 29 > 0 (Real and distinct)."
+    },
+    {
+      "id": "ch4_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "Values of k for which the quadratic equation 2x² - kx + k = 0 has equal roots is:",
+      "options": ["0 only", "4", "8 only", "0, 8"],
+      "answer": "(d) 0, 8",
+      "explanation": "D = 0 => (-k)² - 4(2)(k) = 0 => k² - 8k = 0 => k(k-8) = 0."
+    },
+    {
+      "id": "ch4_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If 1/2 is a root of the equation x² + kx - 5/4 = 0, then the value of k is:",
+      "options": ["2", "-2", "1/4", "1/2"],
+      "answer": "(a) 2",
+      "explanation": "(1/2)² + k(1/2) - 5/4 = 0 => 1/4 + k/2 - 5/4 = 0 => k/2 = 1 => k = 2."
+    },
+    {
+      "id": "ch4_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The nature of roots of the quadratic equation 9x² - 6x - 2 = 0 is:",
+      "options": ["No real roots", "2 equal real roots", "2 distinct real roots", "More than 2 roots"],
+      "answer": "(c) 2 distinct real roots",
+      "explanation": "D = 36 - 4(9)(-2) = 36 + 72 > 0."
+    },
+    {
+      "id": "ch4_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Which constant must be added and subtracted to solve the quadratic equation 9x² + (3/4)x - √2 = 0 by the method of completing the square?",
+      "options": ["1/8", "1/64", "1/4", "9/64"],
+      "answer": "(b) 1/64",
+      "explanation": "Coefficient of x is 3/4 (after dividing by 9 -> 1/12). Half of that squared is (1/24)²."
+    },
+    {
+      "id": "ch4_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The roots of the equation x² + 7x + 10 = 0 are:",
+      "options": ["-5, -2", "5, 2", "-5, 2", "5, -2"],
+      "answer": "(a) -5, -2",
+      "explanation": "(x+5)(x+2)=0."
+    },
+    {
+      "id": "ch4_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The equation x² + 3x + 1 = (x - 2)² is a quadratic equation.\nReason (R): Any equation of the form ax² + bx + c = 0 where a ≠ 0 is a quadratic equation.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "Simplifying A: x² cancels out, leaving linear equation. So A is false."
+    },
+    {
+      "id": "ch4_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): 4x² - 12x + 9 = 0 has repeated roots.\nReason (R): The quadratic equation ax² + bx + c = 0 has repeated roots if D > 0.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(c) A is true but R is false",
+      "explanation": "Repeated roots occur when D = 0. Here D = 144 - 144 = 0 (True). Reason says D > 0 (False)."
+    },
+
+    {
+      "id": "ch4_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the roots of the quadratic equation 6x² - x - 2 = 0.",
+      "answer": "2/3, -1/2"
+    },
+    {
+      "id": "ch4_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the values of k for the quadratic equation 2x² + kx + 3 = 0, so that they have two equal roots.",
+      "answer": "k = ±2√6"
+    },
+    {
+      "id": "ch4_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the value of p for which the quadratic equation px(x - 2) + 6 = 0 has two equal roots.",
+      "answer": "p = 6"
+    },
+    {
+      "id": "ch4_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Solve for x: √2x² + 7x + 5√2 = 0.",
+      "answer": "-√2, -5/√2"
+    },
+    {
+      "id": "ch4_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find two numbers whose sum is 27 and product is 182.",
+      "answer": "13, 14"
+    },
+    {
+      "id": "ch4_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the roots of the equation 3x² - 2√6x + 2 = 0.",
+      "answer": "√(2/3), √(2/3)"
+    },
+    {
+      "id": "ch4_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "For what value of k, is 3 a root of the equation 2x² + x + k = 0?",
+      "answer": "k = -21"
+    },
+
+    {
+      "id": "ch4_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the roots of the quadratic equation 3x² - 5x + 2 = 0 by method of completing the square.",
+      "answer": "1, 2/3"
+    },
+    {
+      "id": "ch4_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "ssm"],
+      "text": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
+      "answer": "Base = 12 cm, Altitude = 5 cm"
+    },
+    {
+      "id": "ch4_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Solve for x: 1/(x+4) - 1/(x-7) = 11/30, x ≠ -4, 7.",
+      "answer": "x = 1, 2"
+    },
+    {
+      "id": "ch4_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If -5 is a root of the quadratic equation 2x² + px - 15 = 0 and the quadratic equation p(x² + x) + k = 0 has equal roots, find the value of k.",
+      "answer": "p=7, k=7/4"
+    },
+    {
+      "id": "ch4_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A cottage industry produces a certain number of pottery articles in a day. It was observed on a particular day that the cost of production of each article (in rupees) was 3 more than twice the number of articles produced on that day. If the total cost of production on that day was ₹ 90, find the number of articles produced and the cost of each article.",
+      "answer": "Number: 6, Cost: ₹15"
+    },
+    {
+      "id": "ch4_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Solve for x: 4x² - 4ax + (a² - b²) = 0.",
+      "answer": "(a+b)/2, (a-b)/2"
+    },
+
+    {
+      "id": "ch4_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Raj's Car.\nRaj and Ajay are very close friends. Both families decide to go to Ranikhet by their own cars. Raj's car travels at a speed of x km/h while Ajay's car travels 5 km/h faster than Raj's car. Raj took 4 hours more than Ajay to complete the journey of 400 km.\n(i) What will be the distance covered by Ajay's car in two hours?\n(ii) Write a quadratic equation which describes the speed of Raj's car.\n(iii) What is the speed of Raj's car?",
+      "answer": "(i) 2(x+5) km (ii) x² + 5x - 500 = 0 (iii) 20 km/h"
+    },
+    {
+      "id": "ch4_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Bacterial Growth.\nIn a laboratory, the count of bacteria in a certain experiment was increasing at a rate such that the number of bacteria at the end of t hours is given by 50t² + 50t + 100.\n(i) How many bacteria were there initially?\n(ii) Find the number of bacteria after 2 hours.\n(iii) After how much time will the count reach 1100?",
+      "answer": "(i) 100 (ii) 400 (iii) 4 hours"
+    },
+
+    {
+      "id": "ch4_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq", "ssm"],
+      "text": "A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the speed of the train.",
+      "answer": "40 km/h"
+    },
+    {
+      "id": "ch4_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq"],
+      "text": "A motor boat whose speed is 18 km/h in still water takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.",
+      "answer": "6 km/h"
+    },
+    {
+      "id": "ch4_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "Two water taps together can fill a tank in 9 3/8 hours. The tap of larger diameter takes 10 hours less than the smaller one to fill the tank separately. Find the time in which each tap can separately fill the tank.",
+      "answer": "Smaller: 25 hours, Larger: 15 hours"
+    },
+    {
+      "id": "ch4_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "Sum of the areas of two squares is 468 m². If the difference of their perimeters is 24 m, find the sides of the two squares.",
+      "answer": "18 m and 12 m"
+    },
+    {
+      "id": "ch4_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "In a flight of 600 km, an aircraft was slowed due to bad weather. Its average speed for the trip was reduced by 200 km/hr and the time of flight increased by 30 minutes. Find the original duration of the flight.",
+      "answer": "1 hour (Original speed 600 km/h)"
+    }
+  ]
+}

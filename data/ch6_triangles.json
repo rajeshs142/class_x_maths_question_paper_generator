@@ -1,0 +1,253 @@
+{
+  "chapter_name": "Triangles",
+  "file_name": "ch6_triangles.json",
+  "questions": [
+    
+    {
+      "id": "ch6_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "If in Δ ABC and Δ PQR, AB/QR = BC/PR = CA/PQ, then:",
+      "options": ["Δ PQR ~ Δ CAB", "Δ PQR ~ Δ ABC", "Δ CBA ~ Δ PQR", "Δ BCA ~ Δ PQR"],
+      "answer": "(a) Δ PQR ~ Δ CAB",
+      "explanation": "Check correspondence of sides. AB corresponds to QR, BC to PR."
+    },
+    {
+      "id": "ch6_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "Which of the following is NOT a similarity criterion?",
+      "options": ["AA", "SAS", "AAA", "RHS"],
+      "answer": "(d) RHS",
+      "explanation": "RHS is a congruence criterion, not similarity (unless sides are proportional, but standard name is not RHS similarity)."
+    },
+    {
+      "id": "ch6_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "In ΔABC, DE || AB. If AB = a, DE = x, BE = b and EC = c, then x expressed in terms of a, b and c is:",
+      "options": ["ac/b", "ac/(b+c)", "ab/c", "ab/(b+c)"],
+      "answer": "(b) ac/(b+c)",
+      "explanation": "By BPT/Similarity: x/a = c/(b+c) => x = ac/(b+c)."
+    },
+    {
+      "id": "ch6_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The perimeters of two similar triangles are 25 cm and 15 cm respectively. If one side of the first triangle is 10 cm, the corresponding side of the second triangle is:",
+      "options": ["4 cm", "5 cm", "6 cm", "10 cm"],
+      "answer": "(c) 6 cm",
+      "explanation": "Ratio of perimeters = Ratio of sides. 25/15 = 10/x => x = 6."
+    },
+    {
+      "id": "ch6_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "In ΔABC, DE || BC. If AD = 1.5 cm, DB = 3 cm and AE = 1 cm, then EC is:",
+      "options": ["2 cm", "3 cm", "4 cm", "2.5 cm"],
+      "answer": "(a) 2 cm",
+      "explanation": "AD/DB = AE/EC => 1.5/3 = 1/EC => EC = 2."
+    },
+    {
+      "id": "ch6_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "In a trapezium ABCD, AB || DC. Diagonals AC and BD intersect at O. If AO/BO = 1/2, then CO/DO is:",
+      "options": ["1/2", "2", "1/4", "1"],
+      "answer": "(a) 1/2",
+      "explanation": "Triangles AOB and COD are similar. Ratios of corresponding sides are equal."
+    },
+    {
+      "id": "ch6_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If ΔABC ~ ΔDEF and ∠A = 47°, ∠E = 83°, then ∠C is:",
+      "options": ["47°", "50°", "83°", "130°"],
+      "answer": "(b) 50°",
+      "explanation": "∠A = ∠D = 47°. ∠E = ∠B = 83°. ∠C = 180 - (47+83) = 50°."
+    },
+    {
+      "id": "ch6_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If two angles of one triangle are respectively equal to two angles of another triangle, then the triangles are similar.\nReason (R): If two angles of one triangle are equal to two angles of another triangle, then the third angle is also equal.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch6_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): All congruent triangles are similar.\nReason (R): All similar triangles are congruent.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(b) A is true but R is false",
+      "explanation": "Similarity implies proportional sides, not necessarily equal sides. So R is false."
+    },
+    {
+      "id": "ch6_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): In triangle ABC, if D and E are points on AB and AC respectively such that DE || BC, then ΔADE ~ ΔABC.\nReason (R): A line parallel to one side of a triangle divides the other two sides proportionally.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(b) Both A and R are true but R is not the direct explanation for similarity (R explains BPT)."
+    },
+
+    {
+      "id": "ch6_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "E and F are points on the sides PQ and PR respectively of a Δ PQR. If PE = 3.9 cm, EQ = 3 cm, PF = 3.6 cm and FR = 2.4 cm, state whether EF || QR.",
+      "answer": "No (Ratios not equal: 1.3 vs 1.5)"
+    },
+    {
+      "id": "ch6_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In the given figure, AB || DE and BD || EF. Prove that DC² = CF × AC.",
+      "answer": "Using BPT twice."
+    },
+    {
+      "id": "ch6_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "ABCD is a trapezium in which AB || DC and its diagonals intersect each other at the point O. Show that AO/BO = CO/DO.",
+      "answer": "Proof using AA similarity."
+    },
+    {
+      "id": "ch6_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A street light bulb is fixed on a pole 6 m above the level of the street. If a woman of height 1.5 m casts a shadow of 3 m, find how far she is away from the base of the pole.",
+      "answer": "9 m"
+    },
+    {
+      "id": "ch6_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "In ΔABC, DE || BC, AD = 2 cm, DB = 3 cm and AE = 3.5 cm. Find AC.",
+      "answer": "AC = 8.75 cm"
+    },
+    {
+      "id": "ch6_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Diagonals of a quadrilateral ABCD intersect each other at the point O such that AO/BO = CO/DO. Show that ABCD is a trapezium.",
+      "answer": "Converse of BPT logic."
+    },
+
+    {
+      "id": "ch6_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same time a tower casts a shadow 28 m long. Find the height of the tower.",
+      "answer": "42 m"
+    },
+    {
+      "id": "ch6_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In the figure, DE || OQ and DF || OR. Show that EF || QR.",
+      "answer": "Proof using BPT."
+    },
+    {
+      "id": "ch6_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "In Figure, if PQ || RS, prove that Δ POQ ~ Δ SOR.",
+      "answer": "AA Similarity (Alt angles, Vertically opposite)."
+    },
+    {
+      "id": "ch6_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "S and T are points on sides PR and QR of ΔPQR such that ∠P = ∠RTS. Show that ΔRPQ ~ ΔRTS.",
+      "answer": "AA Similarity (Common angle R, given angle)."
+    },
+    {
+      "id": "ch6_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Diagonals AC and BD of a trapezium ABCD with AB || DC intersect each other at the point O. Using a similarity criterion for two triangles, show that OA/OC = OB/OD.",
+      "answer": "Proof using AA similarity."
+    },
+
+    {
+      "id": "ch6_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Sharon and the Tree.\nSharon went to a park. From a point A where she stood, her father and the tip of a tree were in a straight line. She used similarity to find the height.\n(i) Which similarity criterion is used?\n(ii) Write the ratio of corresponding sides.\n(iii) If a 6 feet pole casts a 15 feet shadow, find the height of a tree casting a 60 feet shadow.",
+      "answer": "(i) AA (ii) AB/AD = BC/DE (iii) 24 feet"
+    },
+    {
+      "id": "ch6_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Interior Design.\nA triangular cabinet shelf is designed. The largest triangle is ABC and a shelf DE is parallel to BC.\n(i) Show that ΔADE ~ ΔABC.\n(ii) If AD = 10 cm, DB = 5 cm, BC = 18 cm, find DE.\n(iii) Find the ratio of areas of ΔADE and ΔABC.",
+      "answer": "(i) Proof (ii) 12 cm (iii) 4:9"
+    },
+    {
+      "id": "ch6_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Flagpole.\nA student wants to find the height of a flagpole. He uses a 1m stick. Stick shadow = 0.4m, Flagpole shadow = 2.8m.\n(i) What is the ratio of height to shadow?\n(ii) Find the height of the flagpole.",
+      "answer": "(i) 1:0.4 (ii) 7 meters"
+    },
+
+    {
+      "id": "ch6_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm", "pyq"],
+      "text": "State and prove Basic Proportionality Theorem (Thales Theorem).",
+      "answer": "Standard Theorem Proof."
+    },
+    {
+      "id": "ch6_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. Using this, prove that the line joining the mid-points of any two sides of a triangle is parallel to the third side.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch6_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "D is a point on the side BC of a triangle ABC such that ∠ADC = ∠BAC. Prove that CA² = CB × CD.",
+      "answer": "Proof using AA similarity."
+    },
+    {
+      "id": "ch6_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "Sides AB and AC and median AD of a triangle ABC are respectively proportional to sides PQ and PR and median PM of another triangle PQR. Show that ΔABC ~ ΔPQR.",
+      "answer": "Complex proof involving construction and SAS similarity."
+    }
+  ]
+}

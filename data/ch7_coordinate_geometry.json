@@ -1,0 +1,276 @@
+{
+  "chapter_name": "Coordinate Geometry",
+  "file_name": "ch7_coordinate_geometry.json",
+  "questions": [
+    
+    {
+      "id": "ch7_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "The distance of the point P(-6, 8) from the origin is:",
+      "options": ["8", "10", "6", "14"],
+      "answer": "(b) 10",
+      "explanation": "√(x² + y²) = √((-6)² + 8²) = √(36 + 64) = √100 = 10."
+    },
+    {
+      "id": "ch7_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The mid-point of the line segment joining the points (-3, 9) and (-6, -4) is:",
+      "options": ["(-9/2, 5/2)", "(-3/2, 13/2)", "(-9/2, -13/2)", "(9/2, 5/2)"],
+      "answer": "(a) (-9/2, 5/2)",
+      "explanation": "((-3-6)/2, (9-4)/2) = (-9/2, 5/2)."
+    },
+    {
+      "id": "ch7_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The point on the x-axis which is equidistant from (2, -5) and (-2, 9) is:",
+      "options": ["(7, 0)", "(-7, 0)", "(2, 0)", "(-2, 0)"],
+      "answer": "(b) (-7, 0)",
+      "explanation": "Let P(x,0). PA² = PB². (x-2)² + 25 = (x+2)² + 81. Solve for x."
+    },
+    {
+      "id": "ch7_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If (a/3, 4) is the midpoint of the line segment joining the points A(-6, 5) and B(-2, 3), then the value of 'a' is:",
+      "options": ["-4", "-12", "12", "-6"],
+      "answer": "(b) -12",
+      "explanation": "a/3 = (-6-2)/2 => a/3 = -4 => a = -12."
+    },
+    {
+      "id": "ch7_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The distance between the points A(0, 6) and B(0, -2) is:",
+      "options": ["6", "8", "4", "2"],
+      "answer": "(b) 8",
+      "explanation": "|6 - (-2)| = 8."
+    },
+    {
+      "id": "ch7_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Which point lies on the x-axis?",
+      "options": ["(2, 0)", "(0, 2)", "(2, 2)", "(0, -2)"],
+      "answer": "(a) (2, 0)",
+      "explanation": "y-coordinate is zero."
+    },
+    {
+      "id": "ch7_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The distance of point P(2, 3) from the x-axis is:",
+      "options": ["2", "3", "1", "5"],
+      "answer": "(b) 3",
+      "explanation": "Distance from x-axis is the y-coordinate (absolute value)."
+    },
+    {
+      "id": "ch7_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The point (0, 4) lies on y-axis.\nReason (R): The x-coordinate of a point on y-axis is zero.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch7_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): The point (-1, 6) divides the line segment joining (-3, 10) and (6, -8) in the ratio 2:7.\nReason (R): Three points A, B, C are collinear if AB + BC = AC.",
+      "options": ["Both A and R are true", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(b) Both true but R is not the explanation (Explanation needs section formula)."
+    },
+    {
+      "id": "ch7_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): Mid-point of a line segment divides line in the ratio 1:1.\nReason (R): The ratio in which the point (-3, k) divides the line segment joining (-5, 4) and (-2, 3) is 1:2.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(b) Both are true statements independently."
+    },
+
+    {
+      "id": "ch7_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the values of y for which the distance between the points P(2, -3) and Q(10, y) is 10 units.",
+      "answer": "y = 3 or -9"
+    },
+    {
+      "id": "ch7_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the point on the y-axis which is equidistant from the points (5, -2) and (-3, 2).",
+      "answer": "(0, -2)"
+    },
+    {
+      "id": "ch7_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the ratio in which the line segment joining the points (-3, 10) and (6, -8) is divided by (-1, 6).",
+      "answer": "2:7"
+    },
+    {
+      "id": "ch7_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Check whether (5, -2), (6, 4) and (7, -2) are the vertices of an isosceles triangle.",
+      "answer": "Yes (Two sides are equal)"
+    },
+    {
+      "id": "ch7_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find a relation between x and y such that the point (x, y) is equidistant from the points (7, 1) and (3, 5).",
+      "answer": "x - y = 2"
+    },
+    {
+      "id": "ch7_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If the point C(k, 4) divides the line segment joining points A(2, 6) and B(5, 1) in ratio 2:3, find the value of k.",
+      "answer": "k = 16/5"
+    },
+    {
+      "id": "ch7_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the coordinates of a point A, where AB is the diameter of a circle whose centre is (2, -3) and B is (1, 4).",
+      "answer": "(3, -10)"
+    },
+    {
+      "id": "ch7_2m_08",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the distance of the point P(2, 3) from the x-axis.",
+      "answer": "3 units"
+    },
+
+    {
+      "id": "ch7_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the coordinates of the points of trisection of the line segment joining (4, -1) and (-2, -3).",
+      "answer": "(2, -5/3) and (0, -7/3)"
+    },
+    {
+      "id": "ch7_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If the point C(-1, 2) divides internally the line segment joining A(2, 5) and B(x, y) in the ratio 3:4, find the coordinates of B.",
+      "answer": "(-5, -2)"
+    },
+    {
+      "id": "ch7_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the ratio in which the y-axis divides the line segment joining the points (5, -6) and (-1, -4). Also find the point of intersection.",
+      "answer": "Ratio 5:1, Point (0, -13/3)"
+    },
+    {
+      "id": "ch7_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "If (1, 2), (4, y), (x, 6) and (3, 5) are the vertices of a parallelogram taken in order, find x and y.",
+      "answer": "x = 6, y = 3"
+    },
+    {
+      "id": "ch7_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the area of a rhombus if its vertices are (3, 0), (4, 5), (-1, 4) and (-2, -1) taken in order.",
+      "answer": "24 sq units"
+    },
+    {
+      "id": "ch7_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Show that the points (1, 7), (4, 2), (-1, -1) and (-4, 4) are the vertices of a square.",
+      "answer": "All sides equal (√34), diagonals equal (√68)."
+    },
+
+    {
+      "id": "ch7_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert", "ssm"],
+      "text": "Case Study: Classroom Seating.\nIn a classroom, 4 friends are seated at points A, B, C and D. Champa and Chameli observe their positions. (Coordinates given in graph).\n(i) Find distance between A and B.\n(ii) Find distance AC.\n(iii) Check if ABCD is a square.",
+      "answer": "(i) 3√2 (ii) 6 (iii) Yes"
+    },
+    {
+      "id": "ch7_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Gardening.\nStudents of a school are standing in rows and columns in their playground for a drill practice. A, B, C, D are the positions of four students.\n(i) Find the coordinates of A and B.\n(ii) Find the distance between A and C.\n(iii) Find the mid-point of the segment AC.",
+      "answer": "Depends on graph."
+    },
+    {
+      "id": "ch7_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["pyq"],
+      "text": "Case Study: Jagdish's Field.\nJagdish has a field which is in the shape of a right angled triangle AQC. He wants to leave a space in the form of a square PQRS inside the field for growing vegetables.\n(i) Taking O as origin, find coordinates of P.\n(ii) What is the area of square PQRS?",
+      "answer": "Depends on graph."
+    },
+
+    {
+      "id": "ch7_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "Find the ratio in which the line segment joining A(1, -5) and B(-4, 5) is divided by the x-axis. Also find the coordinates of the point of division.",
+      "answer": "Ratio 1:1, Point (-3/2, 0)"
+    },
+    {
+      "id": "ch7_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "Name the type of quadrilateral formed, if any, by the following points, and give reasons for your answer: (-1, -2), (1, 0), (-1, 2), (-3, 0).",
+      "answer": "Square (All sides √8, diagonals 4)"
+    },
+    {
+      "id": "ch7_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "The three vertices of a parallelogram ABCD are A(3, -4), B(-1, -3) and C(-6, 2). Find the coordinates of vertex D.",
+      "answer": "(-2, 1)"
+    },
+    {
+      "id": "ch7_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["pyq"],
+      "text": "Find the centre of a circle passing through the points (6, -6), (3, -7) and (3, 3).",
+      "answer": "(3, -2)"
+    }
+  ]
+}

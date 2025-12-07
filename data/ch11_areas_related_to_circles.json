@@ -1,0 +1,251 @@
+{
+  "chapter_name": "Areas Related to Circles",
+  "file_name": "ch11_areas_related_to_circles.json",
+  "questions": [
+    
+    {
+      "id": "ch11_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "Area of a sector of angle p (in degrees) of a circle with radius R is:",
+      "options": ["p/180 × 2πR", "p/180 × πR²", "p/360 × 2πR", "p/720 × 2πR²"],
+      "answer": "(d) p/720 × 2πR²",
+      "explanation": "Area = (p/360)πR² = (p/720)2πR²."
+    },
+    {
+      "id": "ch11_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If the perimeter and the area of a circle are numerically equal, then the radius of the circle is:",
+      "options": ["2 units", "π units", "4 units", "7 units"],
+      "answer": "(a) 2 units",
+      "explanation": "2πr = πr² => r = 2."
+    },
+    {
+      "id": "ch11_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The length of the minute hand of a clock is 14 cm. The area swept by the minute hand in 5 minutes is:",
+      "options": ["154 cm²", "154/3 cm²", "51.3 cm²", "205.2 cm²"],
+      "answer": "(c) 51.3 cm²",
+      "explanation": "Angle = 30°. Area = (30/360)π(14)² = 154/3 = 51.33."
+    },
+    {
+      "id": "ch11_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The area of a quadrant of a circle with circumference 22 cm is:",
+      "options": ["77/8 cm²", "77/2 cm²", "77/4 cm²", "77/16 cm²"],
+      "answer": "(a) 77/8 cm²",
+      "explanation": "2πr = 22 => r = 3.5. Area = 1/4 π(3.5)² = 77/8."
+    },
+    {
+      "id": "ch11_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the circumference of a circle is doubled, then its area becomes:",
+      "options": ["Doubled", "Halved", "Quadrupled", "Unchanged"],
+      "answer": "(c) Quadrupled",
+      "explanation": "r becomes 2r. Area becomes π(2r)² = 4πr²."
+    },
+    {
+      "id": "ch11_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The perimeter of a sector of a circle of radius 3.5 cm and sector angle 60° is:",
+      "options": ["11 cm", "22 cm", "14.5 cm", "7 cm"],
+      "answer": "(a) 11 cm (approx)",
+      "explanation": "Arc length + 2r = (60/360)2π(3.5) + 7 = 3.66 + 7 = 10.66 ≈ 11."
+    },
+    {
+      "id": "ch11_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The area of the largest triangle that can be inscribed in a semicircle of radius r is:",
+      "options": ["r²", "2r²", "r", "2r"],
+      "answer": "(a) r²",
+      "explanation": "Base = 2r, Height = r. Area = 1/2 * 2r * r = r²."
+    },
+    {
+      "id": "ch11_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If the sector angle is 180°, then the area of sector is 1/2 πr².\nReason (R): If the sector angle is 180°, then the sector becomes a semicircle.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch11_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): The area of a sector of a circle of radius 6 cm with angle 60° is 132/7 cm².\nReason (R): Area of sector = (θ/360) × πr².",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+
+    {
+      "id": "ch11_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60°.",
+      "answer": "132/7 cm²"
+    },
+    {
+      "id": "ch11_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "The length of the minute hand of a clock is 14 cm. Find the area swept by the minute hand in 5 minutes.",
+      "answer": "154/3 cm²"
+    },
+    {
+      "id": "ch11_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the area of a quadrant of a circle whose circumference is 44 cm.",
+      "answer": "38.5 cm²"
+    },
+    {
+      "id": "ch11_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The circumference of a circle exceeds its diameter by 45 cm. Find the radius of the circle.",
+      "answer": "10.5 cm"
+    },
+    {
+      "id": "ch11_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A sector of 56° cut out from a circle, contains area of 17.6 cm². Find the radius of the circle.",
+      "answer": "6 cm"
+    },
+    {
+      "id": "ch11_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the area of the shaded region if the radii of the two concentric circles with centre O are 7 cm and 14 cm respectively and ∠AOC = 40°.",
+      "answer": "154/3 cm²"
+    },
+
+    {
+      "id": "ch11_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area of the corresponding: (i) minor segment (ii) major sector. (Use π = 3.14)",
+      "answer": "(i) 28.5 cm² (ii) 235.5 cm²"
+    },
+    {
+      "id": "ch11_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "ssm"],
+      "text": "A horse is tied to a peg at one corner of a square shaped grass field of side 15 m by means of a 5 m long rope. Find the area of that part of the field in which the horse can graze.",
+      "answer": "19.625 m²"
+    },
+    {
+      "id": "ch11_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "In a circle of radius 21 cm, an arc subtends an angle of 60° at the centre. Find: (i) length of arc (ii) area of sector formed by arc.",
+      "answer": "(i) 22 cm (ii) 231 cm²"
+    },
+    {
+      "id": "ch11_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A brooch is made with silver wire in the form of a circle with diameter 35 mm. The wire is also used in making 5 diameters which divide the circle into 10 equal sectors. Find the total length of the silver wire required.",
+      "answer": "285 mm"
+    },
+    {
+      "id": "ch11_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The perimeter of a sector of a circle of radius 5.7m is 27.2m. Calculate the area of the sector.",
+      "answer": "45.03 m²"
+    },
+    {
+      "id": "ch11_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the area of the shaded region in Fig., where ABCD is a square of side 14 cm.",
+      "answer": "42 cm²"
+    },
+
+    {
+      "id": "ch11_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Horse Grazing.\nA stable owner ties 4 horses at each corner of a square field of side 20m with 7m ropes.\n(i) Find area of square field.\n(ii) Find total grazed area.\n(iii) Find area left ungrazed.",
+      "answer": "(i) 400 m² (ii) 154 m² (iii) 246 m²"
+    },
+    {
+      "id": "ch11_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Round Table Cover.\nA round table cover has six equal designs. The radius of the cover is 28 cm.\n(i) Find the area of the circle.\n(ii) Find the area of the design.\n(iii) Find the cost of making designs at rate of ₹0.35 per cm².",
+      "answer": "(i) 2464 cm² (ii) 464.8 cm² (iii) ₹162.68"
+    },
+    {
+      "id": "ch11_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Tunnel.\nA highway tunnel has a cross section of a sector of a circle. Radius is 5√2 m and central angle is 90°.\n(i) Find the width of the tunnel.\n(ii) Find the height.\n(iii) Find the area of the sector.",
+      "answer": "(i) 10 m (ii) 5√2 m (iii) 39.25 m²"
+    },
+    {
+      "id": "ch11_4m_04",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Trophy Shield.\nA trophy is made of a glass sector DOC supported by wooden triangles. AO=7cm.\n(i) Find angle DOC.\n(ii) Find area of wooden triangles.\n(iii) Find area of glass portion.",
+      "answer": "(i) 60° (ii) 84.77 cm² (iii) 102.67 cm²"
+    },
+    {
+      "id": "ch11_4m_05",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Wipers.\nA car has two wipers which do not overlap. Each wiper has a blade of length 25 cm sweeping through an angle of 115°.\n(i) Find the total area cleaned at each sweep.",
+      "answer": "1254.96 cm²"
+    },
+
+    {
+      "id": "ch11_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "In the figure, a ΔABC is drawn to circumscribe a circle of radius 3 cm, such that the segments BD and DC are respectively of lengths 6 cm and 9 cm. If the area of ΔABC is 54 cm², then find the lengths of sides AB and AC.",
+      "answer": "AB = 9 cm, AC = 12 cm"
+    },
+    {
+      "id": "ch11_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "A farmer has a field in the shape of a trapezium ABCD with AB||DC, AB = 18 cm, DC = 32 cm and distance between AB and DC is 14 cm. Arcs of equal radii 7 cm with centres A, B, C and D have been drawn. Find the area of the field excluding the sectors.",
+      "answer": "196 cm²"
+    }
+  ]
+}

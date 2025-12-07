@@ -1,0 +1,278 @@
+{
+  "chapter_name": "Pair of Linear Equations in Two Variables",
+  "file_name": "ch3_linear_equations.json",
+  "questions": [
+    
+    {
+      "id": "ch3_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "The solution of the equations x - y = 2 and x + y = 4 is:",
+      "options": ["3 and 1", "4 and 3", "5 and 1", "-1 and -3"],
+      "answer": "(a) 3 and 1",
+      "explanation": "Adding equations: 2x=6 => x=3. Then y=1."
+    },
+    {
+      "id": "ch3_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "If the lines 3x + 2ky - 2 = 0 and 2x + 5y + 1 = 0 are parallel, then the value of k is:",
+      "options": ["4/15", "15/4", "4/5", "5/4"],
+      "answer": "(b) 15/4",
+      "explanation": "For parallel lines: a1/a2 = b1/b2 ≠ c1/c2. 3/2 = 2k/5 => 2k = 15/2 => k = 15/4."
+    },
+    {
+      "id": "ch3_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "The pair of equations x + 2y - 5 = 0 and -3x - 6y + 15 = 0 have:",
+      "options": ["A unique solution", "Exactly two solutions", "Infinitely many solutions", "No solution"],
+      "answer": "(c) Infinitely many solutions",
+      "explanation": "Ratios are 1/-3 = 2/-6 = -5/15 = -1/3. Coincident lines."
+    },
+    {
+      "id": "ch3_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If a pair of linear equations is consistent, then the lines will be:",
+      "options": ["Parallel", "Always coincident", "Intersecting or coincident", "Always intersecting"],
+      "answer": "(c) Intersecting or coincident",
+      "explanation": "Consistent means at least one solution."
+    },
+    {
+      "id": "ch3_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The pair of equations y = 0 and y = -7 has:",
+      "options": ["One solution", "Two solutions", "Infinitely many solutions", "No solution"],
+      "answer": "(d) No solution",
+      "explanation": "They are parallel horizontal lines."
+    },
+    {
+      "id": "ch3_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines?",
+      "options": ["1/2", "-1/2", "2", "-2"],
+      "answer": "(c) 2",
+      "explanation": "3/6 = -1/-k = 8/16 => 1/2 = 1/k => k=2."
+    },
+    {
+      "id": "ch3_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The value of c for which the pair of equations cx - y = 2 and 6x - 2y = 3 will have infinitely many solutions is:",
+      "options": ["3", "-3", "-12", "No value"],
+      "answer": "(d) No value",
+      "explanation": "c/6 = -1/-2 = 2/3. But 1/2 ≠ 2/3. Impossible."
+    },
+    {
+      "id": "ch3_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "Graphically, the pair of equations 6x - 3y + 10 = 0 and 2x - y + 9 = 0 represents two lines which are:",
+      "options": ["Intersecting at exactly one point", "Intersecting at exactly two points", "Coincident", "Parallel"],
+      "answer": "(d) Parallel",
+      "explanation": "6/2 = -3/-1 ≠ 10/9."
+    },
+    {
+      "id": "ch3_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The pair of equations x + y = 5 and 2x + 2y = 10 has infinitely many solutions.\nReason (R): If the graph of two linear equations consists of coincident lines, then the system has infinitely many solutions.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch3_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): kx - y = 2 and 6x - 2y = 3 have a unique solution for k = 3.\nReason (R): The condition for unique solution is a1/a2 ≠ b1/b2.",
+      "options": ["Both A and R are true", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "If k=3, 3/6 = -1/-2 (Parallel), so no solution. Assertion is false."
+    },
+
+    {
+      "id": "ch3_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Solve 2x + 3y = 11 and 2x - 4y = -24 and hence find the value of 'm' for which y = mx + 3.",
+      "answer": "x = -2, y = 5, m = -1"
+    },
+    {
+      "id": "ch3_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find whether the lines representing the following pair of linear equations intersect at a point, are parallel or coincident: 5x - 4y + 8 = 0 and 7x + 6y - 9 = 0.",
+      "answer": "Intersecting lines"
+    },
+    {
+      "id": "ch3_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "For what value of k will the following pair of linear equations have no solution? 3x + y = 1 and (2k-1)x + (k-1)y = 2k+1.",
+      "answer": "k = 2"
+    },
+    {
+      "id": "ch3_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "The difference between two numbers is 26 and one number is three times the other. Find them.",
+      "answer": "39 and 13"
+    },
+    {
+      "id": "ch3_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Solve for x and y: 3x - y = 3 and 9x - 3y = 9.",
+      "answer": "Infinitely many solutions"
+    },
+    {
+      "id": "ch3_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Solve for x and y: 0.2x + 0.3y = 1.3 and 0.4x + 0.5y = 2.3.",
+      "answer": "x = 2, y = 3"
+    },
+    {
+      "id": "ch3_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Sum of two numbers is 35 and their difference is 13. Find the numbers.",
+      "answer": "24 and 11"
+    },
+
+    {
+      "id": "ch3_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "The coach of a cricket team buys 7 bats and 6 balls for ₹ 3800. Later, she buys 3 bats and 5 balls for ₹ 1750. Find the cost of each bat and each ball.",
+      "answer": "Bat: ₹500, Ball: ₹50"
+    },
+    {
+      "id": "ch3_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A fraction becomes 9/11, if 2 is added to both the numerator and the denominator. If 3 is added to both, it becomes 5/6. Find the fraction.",
+      "answer": "7/9"
+    },
+    {
+      "id": "ch3_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq", "ssm"],
+      "text": "Five years hence, the age of Jacob will be three times that of his son. Five years ago, Jacob's age was seven times that of his son. What are their present ages?",
+      "answer": "Jacob: 40, Son: 10"
+    },
+    {
+      "id": "ch3_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Solve for x and y: 49x + 51y = 499 and 51x + 49y = 501.",
+      "answer": "x = 11/2, y = 9/2"
+    },
+    {
+      "id": "ch3_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "The sum of a two-digit number and the number obtained by reversing the digits is 66. If the digits of the number differ by 2, find the number. How many such numbers are there?",
+      "answer": "42 or 24 (Two such numbers)"
+    },
+    {
+      "id": "ch3_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The taxi charges in a city consist of a fixed charge together with the charge for the distance covered. For 10 km, the charge is ₹105 and for 15 km, it is ₹155. Find fixed charge and charge per km.",
+      "answer": "Fixed: ₹5, Per km: ₹10"
+    },
+
+    {
+      "id": "ch3_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Ticket Booking.\nFrom Bangalore bus stand, 2 tickets to Malleshwaram and 3 to Yeshwanthpur cost ₹46; 3 to Malleshwaram and 5 to Yeshwanthpur cost ₹74.\n(i) Form a pair of linear equations.\n(ii) Find the fare to each place.\n(iii) What is the cost of 4 tickets to Malleshwaram?",
+      "answer": "(i) 2x+3y=46, 3x+5y=74 (ii) Malleshwaram ₹8, Yeshwanthpur ₹10 (iii) ₹32"
+    },
+    {
+      "id": "ch3_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Lunch Party.\nMr. Manoj arranged a lunch party. Expenses are partly fixed and partly proportional to the number of guests. For 7 guests cost is ₹650. For 11 guests cost is ₹970.\n(i) Form the equations.\n(ii) Find the fixed and variable cost.\n(iii) What is the cost for 15 guests?",
+      "answer": "(i) x+7y=650, x+11y=970 (ii) Fixed: ₹90, Variable: ₹80 (iii) ₹1290"
+    },
+
+    {
+      "id": "ch3_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq", "ssm"],
+      "text": "A boat goes 30 km upstream and 44 km downstream in 10 hours. In 13 hours, it can go 40 km upstream and 55 km downstream. Determine the speed of the stream and that of the boat in still water.",
+      "answer": "Boat: 8 km/h, Stream: 3 km/h"
+    },
+    {
+      "id": "ch3_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "2 women and 5 men can together finish an embroidery work in 4 days, while 3 women and 6 men can finish it in 3 days. Find the time taken by 1 woman alone to finish the work, and also that taken by 1 man alone.",
+      "answer": "Woman: 18 days, Man: 36 days"
+    },
+    {
+      "id": "ch3_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "Roohi travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the remaining by bus. If she travels 100 km by train and the remaining by bus, she takes 10 minutes longer. Find the speed of the train and the bus separately.",
+      "answer": "Train: 60 km/h, Bus: 80 km/h"
+    },
+    {
+      "id": "ch3_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "Solve the following system of linear equations graphically: x - y + 1 = 0 and 3x + 2y - 12 = 0. Calculate the area bounded by these lines and the x-axis. Also find coordinates of triangle vertices.",
+      "answer": "x=2, y=3. Vertices: (2,3), (-1,0), (4,0). Area = 7.5 sq units"
+    },
+    {
+      "id": "ch3_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "The sum of the digits of a two-digit number is 9. Also, nine times this number is twice the number obtained by reversing the order of the digits. Find the number.",
+      "answer": "18"
+    },
+    {
+      "id": "ch3_5m_06",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "Points A and B are 90 km apart from each other on a highway. A car starts from A and another from B at the same time. If they go in the same direction they meet in 9 hours and if they go in opposite directions they meet in 9/7 hours. Find their speeds.",
+      "answer": "40 km/h, 30 km/h"
+    }
+  ]
+}

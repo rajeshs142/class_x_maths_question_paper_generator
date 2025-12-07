@@ -1,0 +1,327 @@
+{
+  "chapter_name": "Polynomials",
+  "file_name": "ch2_polynomials.json",
+  "questions": [
+    
+    {
+      "id": "ch2_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "The number of zeroes of the polynomial y = p(x) from the graph (intersects x-axis at 3 points) is:",
+      "options": ["0", "1", "2", "3"],
+      "answer": "(d) 3",
+      "explanation": "The number of zeroes is equal to the number of times the graph intersects the x-axis."
+    },
+    {
+      "id": "ch2_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If one zero of the quadratic polynomial x² + 3x + k is 2, then the value of k is:",
+      "options": ["10", "-10", "5", "-5"],
+      "answer": "(b) -10",
+      "explanation": "Put x=2 in equation: (2)² + 3(2) + k = 0 => 4 + 6 + k = 0 => k = -10."
+    },
+    {
+      "id": "ch2_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "A quadratic polynomial whose zeroes are -3 and 4 is:",
+      "options": ["x² - x + 12", "x² + x + 12", "x² - x - 12", "2x² + 2x - 24"],
+      "answer": "(c) x² - x - 12",
+      "explanation": "Sum = 1, Product = -12. Equation: x² - (Sum)x + Product."
+    },
+    {
+      "id": "ch2_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the zeroes of the quadratic polynomial x² + (a + 1)x + b are 2 and -3, then:",
+      "options": ["a = -7, b = -1", "a = 5, b = -1", "a = 2, b = -6", "a = 0, b = -6"],
+      "answer": "(d) a = 0, b = -6",
+      "explanation": "Sum: -1 = -(a+1) => a=0. Product: -6 = b."
+    },
+    {
+      "id": "ch2_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The number of polynomials having zeroes as -2 and 5 is:",
+      "options": ["1", "2", "3", "more than 3"],
+      "answer": "(d) more than 3",
+      "explanation": "We can have infinite polynomials of the form k(x² - 3x - 10)."
+    },
+    {
+      "id": "ch2_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If one zero of the polynomial (a² + 9)x² + 13x + 6a is reciprocal of the other, then the value of a is:",
+      "options": ["1", "3", "4", "2"],
+      "answer": "(b) 3",
+      "explanation": "Product of roots = 1 => c/a = 1 => 6a = a² + 9 => a² - 6a + 9 = 0 => (a-3)² = 0."
+    },
+    {
+      "id": "ch2_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the zeroes of the quadratic polynomial ax² + bx + c, c ≠ 0 are equal, then:",
+      "options": ["c and a have opposite signs", "c and b have opposite signs", "c and a have same signs", "c and b have same signs"],
+      "answer": "(c) c and a have same signs",
+      "explanation": "For equal roots, b² - 4ac = 0 => b² = 4ac. Since b² is always positive, 4ac must be positive, so a and c must have same signs."
+    },
+    {
+      "id": "ch2_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The zeroes of the quadratic polynomial x² + 99x + 127 are:",
+      "options": ["both positive", "both negative", "one positive one negative", "both equal"],
+      "answer": "(b) both negative",
+      "explanation": "Since all coefficients are positive, both zeroes must be negative."
+    },
+    {
+      "id": "ch2_1m_09",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Which of the following is not the graph of a quadratic polynomial?",
+      "options": ["Parabola open up", "Parabola open down", "Parabola cutting x-axis twice", "Curve cutting x-axis three times"],
+      "answer": "(d) Curve cutting x-axis three times",
+      "explanation": "A quadratic polynomial (degree 2) can intersect the x-axis at most 2 times."
+    },
+    {
+      "id": "ch2_1m_10",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2020"],
+      "text": "If α and β are the zeroes of f(x) = 2x² + 5x + k satisfying the relation α² + β² + αβ = 21/4, then value of k is:",
+      "options": ["2", "-2", "1", "-1"],
+      "answer": "(a) 2",
+      "explanation": "Use (α+β)² - αβ = 21/4."
+    },
+    {
+      "id": "ch2_1m_11",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "The degree of the polynomial (x + 1)(x² - x - x⁴ + 1) is:",
+      "options": ["2", "3", "4", "5"],
+      "answer": "(d) 5",
+      "explanation": "Highest power will be x * -x⁴ = -x⁵."
+    },
+    {
+      "id": "ch2_1m_12",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): P(x) = 14x³ - 2x² + 8x^4 + 7x - 8 is a polynomial of degree 3.\nReason (R): The highest power of x in the polynomial P(x) is the degree of the polynomial.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "Highest power is 4, not 3."
+    },
+    {
+      "id": "ch2_1m_13",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If the sum of the zeroes of the quadratic polynomial x² - 2kx + 8 is 2, then value of k is 1.\nReason (R): Sum of zeroes of a quadratic polynomial ax² + bx + c is -b/a.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch2_1m_14",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): x² + 4x + 5 has two real zeroes.\nReason (R): A quadratic polynomial can have at most two real zeroes.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "D = 16 - 20 = -4 (No real zeroes). So Assertion is false."
+    },
+    {
+      "id": "ch2_1m_15",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The value of p for which the polynomial x³ + 4x² - px + 8 is exactly divisible by (x - 2) is:",
+      "options": ["0", "3", "5", "16"],
+      "answer": "(d) 16",
+      "explanation": "Put x=2, P(2) = 0 => 8 + 16 - 2p + 8 = 0 => 2p = 32 => p=16."
+    },
+
+    {
+      "id": "ch2_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the zeroes of the quadratic polynomial x² - 2x - 8 and verify the relationship between the zeroes and the coefficients.",
+      "answer": "Zeroes: 4, -2"
+    },
+    {
+      "id": "ch2_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the zeroes of the quadratic polynomial 4s² - 4s + 1 and verify the relationship between the zeroes and the coefficients.",
+      "answer": "Zeroes: 1/2, 1/2"
+    },
+    {
+      "id": "ch2_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the zeroes of the quadratic polynomial 3x² - x - 4.",
+      "answer": "Zeroes: -1, 4/3"
+    },
+    {
+      "id": "ch2_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the quadratic polynomial sum and product of whose zeroes are √2 and -12 respectively.",
+      "answer": "x² - √2x - 12"
+    },
+    {
+      "id": "ch2_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If α and β are the zeroes of the polynomial f(x) = x² + x - 2, find the value of 1/α - 1/β.",
+      "answer": "±3/2 (depends on which is α)"
+    },
+    {
+      "id": "ch2_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If the sum of the zeroes of the polynomial p(x) = (k² - 14)x² - 2x - 12 is 1, find the value of k.",
+      "answer": "k = ±4"
+    },
+    {
+      "id": "ch2_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the value of k such that the polynomial x² - (k + 6)x + 2(2k - 1) has sum of its zeroes equal to half of their product.",
+      "answer": "k = 7"
+    },
+    {
+      "id": "ch2_2m_08",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find a quadratic polynomial whose zeroes are 5-3√2 and 5+3√2.",
+      "answer": "x² - 10x + 7"
+    },
+
+    {
+      "id": "ch2_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "ssm"],
+      "text": "Find the zeroes of the quadratic polynomial 6x² - 3 - 7x and verify the relationship between the zeroes and the coefficients.",
+      "answer": "Zeroes: 3/2, -1/3"
+    },
+    {
+      "id": "ch2_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If α and β are zeroes of the quadratic polynomial x² - 6x + a; find the value of 'a' if 3α + 2β = 20.",
+      "answer": "a = -16"
+    },
+    {
+      "id": "ch2_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If α and β are zeroes of the quadratic polynomial 4x² + 4x + 1, find the value of 2α² + 2β².",
+      "answer": "1"
+    },
+    {
+      "id": "ch2_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If the squared difference of the zeroes of the quadratic polynomial x² + px + 45 is equal to 144, find the value of p.",
+      "answer": "p = ±18"
+    },
+    {
+      "id": "ch2_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If α and β are the zeroes of the polynomial f(x) = x² - 5x + k such that α - β = 1, find the value of k.",
+      "answer": "k = 6"
+    },
+    {
+      "id": "ch2_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find a quadratic polynomial whose zeroes are reciprocals of the zeroes of the polynomial f(x) = ax² + bx + c, a ≠ 0, c ≠ 0.",
+      "answer": "cx² + bx + a"
+    },
+    {
+      "id": "ch2_3m_07",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If sum of the squares of zeroes of the quadratic polynomial f(x) = x² - 8x + k is 40, find the value of k.",
+      "answer": "k = 12"
+    },
+    {
+      "id": "ch2_3m_08",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If α and β are the zeroes of the quadratic polynomial p(x) = 2x² + 5x + k satisfying the relation α² + β² + αβ = 21/4, then find the value of k.",
+      "answer": "k = 2"
+    },
+    {
+      "id": "ch2_3m_09",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the zeroes of the polynomial x³ - 4x² + 5x - 2, if two of its zeroes are 1 and 1.",
+      "answer": "Third zero is 2."
+    },
+    {
+      "id": "ch2_3m_10",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Obtain all other zeroes of 3x⁴ + 6x³ - 2x² - 10x - 5, if two of its zeroes are √(5/3) and -√(5/3).",
+      "answer": "-1, -1"
+    },
+
+    {
+      "id": "ch2_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Basketball and Soccer.\nThe path of a soccer ball is a parabola. The graph of the parabola is given by a quadratic polynomial. Points where it cuts the x-axis are the zeroes.\n(i) If the path is given by x² - 2x - 8, find the zeroes.\n(ii) Find the number of zeroes if the graph cuts x-axis at 3 points.\n(iii) If sum of zeroes is 2 and product is -8, write the polynomial.",
+      "answer": "(i) 4, -2 (ii) 3 (iii) x² - 2x - 8"
+    },
+    {
+      "id": "ch2_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Highway Underpass.\nA highway underpass is parabolic in shape. It is represented by the polynomial P(x) = x² - 2x - 8.\n(i) What is the shape of the curve?\n(ii) Find the zeroes of the polynomial.\n(iii) If the highway width is the distance between the zeroes, find the width.",
+      "answer": "(i) Parabola (ii) 4, -2 (iii) 6 units"
+    },
+    {
+      "id": "ch2_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["pyq"],
+      "text": "Case Study: Roller Coaster.\nThe track of a roller coaster is represented by the polynomial p(x) = x³ - 6x² + 11x - 6.\n(i) What is the degree of the polynomial?\n(ii) If one zero is 1, find the other two zeroes.\n(iii) Find the value of p(0).",
+      "answer": "(i) 3 (ii) 2, 3 (iii) -6"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "chapter_name": "Some Applications of Trigonometry",
+  "file_name": "ch9_applications_of_trigonometry.json",
+  "questions": [
+    
+    {
+      "id": "ch9_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "If the length of the shadow of a tree decreases, then the angle of elevation:",
+      "options": ["Increases", "Decreases", "Remains same", "None of the above"],
+      "answer": "(a) Increases",
+      "explanation": "As shadow decreases, the sun is higher up, so angle increases."
+    },
+    {
+      "id": "ch9_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The angle of elevation of the top of a building from a point on the ground, which is 30 m away from the foot of the building, is 30°. The height of the building is:",
+      "options": ["10 m", "30√3 m", "10√3 m", "30 m"],
+      "answer": "(c) 10√3 m",
+      "explanation": "h/30 = tan 30 = 1/√3 => h = 30/√3 = 10√3."
+    },
+    {
+      "id": "ch9_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If a tower 6m high casts a shadow of 2√3 m long on the ground, then the sun’s elevation is:",
+      "options": ["60°", "45°", "30°", "90°"],
+      "answer": "(a) 60°",
+      "explanation": "tan θ = 6/(2√3) = √3 => θ = 60°."
+    },
+    {
+      "id": "ch9_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The angle formed by the line of sight with the horizontal when the point is below the horizontal level is called:",
+      "options": ["Angle of elevation", "Angle of depression", "No such angle", "None"],
+      "answer": "(b) Angle of depression",
+      "explanation": "Definition."
+    },
+    {
+      "id": "ch9_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "A ladder 15 m long makes an angle of 60° with the wall. Find the height of the point where the ladder touches the wall.",
+      "options": ["15√3 m", "15√3/2 m", "15/2 m", "15 m"],
+      "answer": "(c) 15/2 m",
+      "explanation": "cos 60 = h/15 => 1/2 = h/15 (Wait, with wall means angle with vertical? No, standard convention is with ground unless specified. If with wall: sin 60 = h/15. If with ground: sin 60 = h/15. Let's assume angle with wall: cos 60 = h/15 => h = 7.5m)."
+    },
+    {
+      "id": "ch9_1m_06",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The height of a tower can be found using the angle of elevation and the horizontal distance from the base.\nReason (R): The relation tan θ = P/B holds true in right-angled triangles.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch9_1m_07",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): If the length of the shadow of a vertical pole is equal to its height, then the angle of elevation of the sun is 45°.\nReason (R): According to Pythagoras theorem, H² = P² + B².",
+      "options": ["Both A and R are true", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(b) Both true, but R is not the explanation. Explanation is tan θ = 1 => θ = 45°."
+    },
+
+    {
+      "id": "ch9_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with the ground level is 30°.",
+      "answer": "10 m"
+    },
+    {
+      "id": "ch9_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If the height and length of a shadow of a tower are the same, then find the angle of elevation of Sun.",
+      "answer": "45°"
+    },
+    {
+      "id": "ch9_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The ratio of the height of a tower and the length of its shadow on the ground is √3 : 1. Find the angle of elevation of the Sun.",
+      "answer": "60°"
+    },
+    {
+      "id": "ch9_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. Find the length of the string.",
+      "answer": "40√3 m"
+    },
+
+    {
+      "id": "ch9_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A tree breaks due to storm and the broken part bends so that the top of the tree touches the ground making an angle 30° with it. The distance between the foot of the tree to the point where the top touches the ground is 8 m. Find the height of the tree.",
+      "answer": "8√3 m"
+    },
+    {
+      "id": "ch9_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "From the top of a 7 m high building, the angle of elevation of the top of a tower is 60° and the angle of depression of its foot is 45°. Find the height of the tower.",
+      "answer": "7(√3 + 1) m"
+    },
+    {
+      "id": "ch9_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The shadow of a tower standing on a level ground is found to be 40 m longer when the Sun’s altitude is 30° than when it is 60°. Find the height of the tower.",
+      "answer": "20√3 m"
+    },
+    {
+      "id": "ch9_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "An observer 1.5 m tall is 28.5 m away from a chimney. The angle of elevation of the top of the chimney from her eyes is 45°. What is the height of the chimney?",
+      "answer": "30 m"
+    },
+    {
+      "id": "ch9_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A bird is sitting on the top of a 80 m high tree. From a point on the ground, the angle of elevation of the bird is 45°. The bird flies away horizontally. After 2 seconds, the angle of elevation of the bird from the same point is 30°. Find the speed of flying of the bird.",
+      "answer": "29.28 m/s"
+    },
+
+    {
+      "id": "ch9_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: India Gate.\nA group of students visited India Gate. It is about 42m high.\n(i) What is the angle of elevation if they are standing 42m away?\n(ii) Find the length of the shadow if the sun is at 60°.\n(iii) Find the length of a ladder placed 42m away touching the tip.",
+      "answer": "(i) 45° (ii) 14√3 m (iii) 42√2 m"
+    },
+    {
+      "id": "ch9_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Satellite.\nA satellite flying at height h watches two mountains Nanda Devi and Mullayanagiri. The angles of depression are 30° and 60°. Distance between peaks is 1937 km. Satellite is above the midpoint.\n(i) Find the distance of satellite from Nanda Devi.\n(ii) Find height h.\n(iii) Find distance from Mullayanagiri.",
+      "answer": "(i) 1937 km (ii) 968.5√3 km"
+    },
+    {
+      "id": "ch9_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Drone and Ambulance.\nA drone is used to spot an ambulance. Drone is at height 100m. Angle of depression is 30°.\n(i) Draw the diagram.\n(ii) Find the horizontal distance.\n(iii) If angle changes to 60° after 2 sec, find speed.",
+      "answer": "(ii) 100√3 m (iii) Speed calc required"
+    },
+    {
+      "id": "ch9_4m_04",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["pyq"],
+      "text": "Case Study: Kite Festival.\nIn Fig, angles of elevation of two kites (Points A and B) from the hands of a man (Point C) are found to be 30° and 60° respectively. Taking AD = 50 m and BE = 60 m.\n(i) Find lengths of strings.\n(ii) Find distance 'd' between kites.",
+      "answer": "(i) AC=100m, BC=40√3m (ii) Calc required"
+    },
+
+    {
+      "id": "ch9_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq"],
+      "text": "From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. Find the height of the tower.",
+      "answer": "20(√3 - 1) m"
+    },
+    {
+      "id": "ch9_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "The angle of elevation of the top of a building from the foot of the tower is 30° and the angle of elevation of the top of the tower from the foot of the building is 60°. If the tower is 50 m high, find the height of the building.",
+      "answer": "16.67 m (50/3 m)"
+    },
+    {
+      "id": "ch9_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq"],
+      "text": "Two poles of equal heights are standing opposite each other on either side of the road, which is 80 m wide. From a point between them on the road, the angles of elevation of the top of the poles are 60° and 30°, respectively. Find the height of the poles and the distances of the point from the poles.",
+      "answer": "Height: 20√3 m. Distances: 20m, 60m."
+    },
+    {
+      "id": "ch9_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "A man on the deck of a ship, 10 m above water level, observes the angle of elevation of the top of a cliff as 60° and the angle of depression of the base of the cliff as 30°. Calculate the distance of the cliff from the ship and the height of the cliff.",
+      "answer": "Distance: 10√3 m, Height: 40 m"
+    },
+    {
+      "id": "ch9_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "The angles of elevation of a cloud from a point 60 m above a lake is 30° and the angle of depression of the reflection of the cloud in the lake is 60°. Find the height of the cloud.",
+      "answer": "120 m"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "chapter_name": "Introduction to Trigonometry",
+  "file_name": "ch8_intro_to_trigonometry.json",
+  "questions": [
+    
+    {
+      "id": "ch8_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "pyq"],
+      "text": "The value of (sin 30° + cos 30°) - (sin 60° + cos 60°) is:",
+      "options": ["-1", "0", "1", "2"],
+      "answer": "(b) 0",
+      "explanation": "sin 30 = cos 60 and cos 30 = sin 60. Terms cancel out."
+    },
+    {
+      "id": "ch8_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "The value of tan 30° / cot 60° is:",
+      "options": ["1/2", "1", "√3", "1/√3"],
+      "answer": "(b) 1",
+      "explanation": "tan 30 = 1/√3, cot 60 = 1/√3. Ratio is 1."
+    },
+    {
+      "id": "ch8_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "9 sec² A - 9 tan² A is equal to:",
+      "options": ["1", "9", "8", "0"],
+      "answer": "(b) 9",
+      "explanation": "9(sec² A - tan² A) = 9(1) = 9."
+    },
+    {
+      "id": "ch8_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If cos A = 4/5, then the value of tan A is:",
+      "options": ["3/5", "3/4", "4/3", "5/3"],
+      "answer": "(b) 3/4",
+      "explanation": "Base=4, Hyp=5 => Perp=3. tan A = 3/4."
+    },
+    {
+      "id": "ch8_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If sin A = 1/2, then the value of cot A is:",
+      "options": ["√3", "1/√3", "√3/2", "1"],
+      "answer": "(a) √3",
+      "explanation": "A = 30°. cot 30 = √3."
+    },
+    {
+      "id": "ch8_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The value of (1 + tan² θ)(1 - sin θ)(1 + sin θ) is:",
+      "options": ["0", "1", "2", "1/2"],
+      "answer": "(b) 1",
+      "explanation": "sec² θ * (1 - sin² θ) = sec² θ * cos² θ = 1."
+    },
+    {
+      "id": "ch8_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If sin θ - cos θ = 0, then the value of (sin⁴ θ + cos⁴ θ) is:",
+      "options": ["1", "3/4", "1/2", "1/4"],
+      "answer": "(c) 1/2",
+      "explanation": "sin θ = cos θ => θ = 45°. (1/√2)⁴ + (1/√2)⁴ = 1/4 + 1/4 = 1/2."
+    },
+    {
+      "id": "ch8_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If ΔABC is right angled at C, then the value of cos(A + B) is:",
+      "options": ["0", "1", "1/2", "√3/2"],
+      "answer": "(a) 0",
+      "explanation": "A+B = 90°. cos(90°) = 0."
+    },
+    {
+      "id": "ch8_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The value of sin θ increases as θ increases from 0° to 90°.\nReason (R): The value of cos θ increases as θ increases from 0° to 90°.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(b) A is true but R is false",
+      "explanation": "cos θ decreases as θ increases."
+    },
+    {
+      "id": "ch8_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): sin² 67° + cos² 67° = 1.\nReason (R): For any value of θ, sin² θ + cos² θ = 1.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch8_1m_11",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): In a right angled triangle, if tan A = 1, then 2 sin A cos A = 1.\nReason (R): sin A = cos A when A = 45°.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(b) Both are true but R doesn't directly explain the formula sin 2A."
+    },
+    {
+      "id": "ch8_1m_12",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:",
+      "options": ["0", "1", "2", "-1"],
+      "answer": "(c) 2",
+      "explanation": "Standard identity problem. Simplifies to 2."
+    },
+
+    {
+      "id": "ch8_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "If sin A = 3/4, calculate cos A and tan A.",
+      "answer": "cos A = √7/4, tan A = 3/√7"
+    },
+    {
+      "id": "ch8_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Evaluate: 2 tan² 45° + cos² 30° - sin² 60°.",
+      "answer": "2"
+    },
+    {
+      "id": "ch8_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If tan(A + B) = √3 and tan(A - B) = 1/√3, 0° < A+B ≤ 90°, A > B, find A and B.",
+      "answer": "A = 45°, B = 15°"
+    },
+    {
+      "id": "ch8_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If 15 cot A = 8, find sin A and sec A.",
+      "answer": "sin A = 15/17, sec A = 17/8"
+    },
+    {
+      "id": "ch8_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the value of (sin 30° + tan 45° - cosec 60°) / (sec 30° + cos 60° + cot 45°).",
+      "answer": "(43 - 24√3) / 11"
+    },
+    {
+      "id": "ch8_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If sin 3A = cos (A - 26°), where 3A is an acute angle, find the value of A.",
+      "answer": "29°"
+    },
+    {
+      "id": "ch8_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Prove that: (1 - sin θ)/(1 + sin θ) = (sec θ - tan θ)².",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_2m_08",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "In Δ PQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine the values of sin P, cos P and tan P.",
+      "answer": "sin P = 12/13, cos P = 5/13, tan P = 12/5"
+    },
+
+    {
+      "id": "ch8_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "Prove that: (sin θ - 2sin³ θ) / (2cos³ θ - cos θ) = tan θ.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "ssm"],
+      "text": "Prove that: (cosec A - sin A)(sec A - cos A) = 1 / (tan A + cot A).",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that: √((1 + sin A) / (1 - sin A)) = sec A + tan A.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If tan θ + sin θ = m and tan θ - sin θ = n, show that m² - n² = 4√mn.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Evaluate: (5 cos² 60° + 4 sec² 30° - tan² 45°) / (sin² 30° + cos² 30°).",
+      "answer": "67/12"
+    },
+    {
+      "id": "ch8_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If x = a cos θ - b sin θ and y = a sin θ + b cos θ, prove that x² + y² = a² + b².",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_07",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Prove that: (tan θ / (1 - cot θ)) + (cot θ / (1 - tan θ)) = 1 + sec θ cosec θ.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch8_3m_08",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If sec θ + tan θ = p, show that (p² - 1) / (p² + 1) = sin θ.",
+      "answer": "Proof required."
+    },
+
+    {
+      "id": "ch8_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "Prove that: (sin A + cosec A)² + (cos A + sec A)² = 7 + tan² A + cot² A.",
+      "answer": "Standard Proof."
+    },
+    {
+      "id": "ch8_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "Prove that (cos A - sin A + 1) / (cos A + sin A - 1) = cosec A + cot A, using the identity cosec² A = 1 + cot² A.",
+      "answer": "Complex Proof involving dividing by sin A."
+    }
+  ]
+}

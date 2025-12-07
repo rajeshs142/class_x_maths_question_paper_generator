@@ -1,0 +1,255 @@
+{
+  "chapter_name": "Probability",
+  "file_name": "ch14_probability.json",
+  "questions": [
+    
+    {
+      "id": "ch14_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "A card is selected at random from a deck of 52 playing cards. The probability of it being a red face card is:",
+      "options": ["3/13", "2/13", "1/2", "3/26"],
+      "answer": "(d) 3/26",
+      "explanation": "Total red face cards = 6 (K,Q,J of Hearts & Diamonds). P = 6/52 = 3/26."
+    },
+    {
+      "id": "ch14_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "If P(E) = 0.05, what is the probability of 'not E'?",
+      "options": ["0.95", "0.5", "0.095", "0.9"],
+      "answer": "(a) 0.95",
+      "explanation": "P(not E) = 1 - P(E) = 1 - 0.05 = 0.95."
+    },
+    {
+      "id": "ch14_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Which of the following cannot be the probability of an event?",
+      "options": ["2/3", "-1.5", "15%", "0.7"],
+      "answer": "(b) -1.5",
+      "explanation": "Probability cannot be negative."
+    },
+    {
+      "id": "ch14_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "A die is thrown once. The probability of getting an even number is:",
+      "options": ["1/2", "1/3", "1/6", "5/6"],
+      "answer": "(a) 1/2",
+      "explanation": "Even numbers: 2, 4, 6 (3 outcomes). P = 3/6 = 1/2."
+    },
+    {
+      "id": "ch14_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The probability of getting a bad egg in a lot of 400 is 0.035. The number of bad eggs in the lot is:",
+      "options": ["7", "14", "21", "28"],
+      "answer": "(b) 14",
+      "explanation": "0.035 = x/400 => x = 14."
+    },
+    {
+      "id": "ch14_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "Two dice are thrown together. The probability of getting the same number on both dice is:",
+      "options": ["1/2", "1/3", "1/6", "1/12"],
+      "answer": "(c) 1/6",
+      "explanation": "Doublets: (1,1), (2,2)...(6,6) = 6 outcomes. P = 6/36 = 1/6."
+    },
+    {
+      "id": "ch14_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "From the letters of the word 'MOBILE', a letter is selected. The probability that the letter is a vowel is:",
+      "options": ["1/3", "3/7", "1/6", "1/2"],
+      "answer": "(d) 1/2",
+      "explanation": "Vowels: O, I, E (3). Total letters: 6. P = 3/6 = 1/2."
+    },
+    {
+      "id": "ch14_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "A box contains 90 discs numbered 1 to 90. One disc is drawn. Probability that it bears a prime number less than 23 is:",
+      "options": ["7/90", "10/90", "4/45", "9/89"],
+      "answer": "(c) 4/45",
+      "explanation": "Primes < 23: 2,3,5,7,11,13,17,19 (8 numbers). P = 8/90 = 4/45."
+    },
+    {
+      "id": "ch14_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The probability of getting a prime number in a single throw of a die is 1/2.\nReason (R): A die has prime numbers 2, 3, 5.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch14_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): If P(E) = 0.20, then P(not E) = 0.80.\nReason (R): P(E) + P(not E) = 1.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch14_1m_11",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The probability of winning a game is 0.4, then probability of losing is 0.6.\nReason (R): P(E) + P(not E) = 1.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch14_1m_12",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): A leap year has 53 Sundays is 2/7.\nReason (R): A non-leap year has 53 Sundays is 5/7.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(c) A is true but R is false (Non-leap year 53 sundays prob is 1/7)."
+    },
+
+    {
+      "id": "ch14_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A bag contains 3 red balls and 5 black balls. A ball is drawn at random. What is the probability that the ball drawn is (i) red? (ii) not red?",
+      "answer": "(i) 3/8 (ii) 5/8"
+    },
+    {
+      "id": "ch14_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A die is thrown once. Find the probability of getting (i) a prime number; (ii) a number lying between 2 and 6.",
+      "answer": "(i) 1/2 (ii) 1/2"
+    },
+    {
+      "id": "ch14_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Two dice are thrown simultaneously. Find the probability of getting a doublet of odd numbers.",
+      "answer": "1/12 (3/36)"
+    },
+    {
+      "id": "ch14_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "A card is drawn at random from a well-shuffled deck of 52 cards. Find the probability that the card drawn is neither a king nor a queen.",
+      "answer": "11/13 (44/52)"
+    },
+    {
+      "id": "ch14_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "There is a square board of side '2a' units circumscribing a yellow circle. Jayadev is asked to keep a dot on the board. Find the probability that he keeps the dot on the shaded region (outside circle).",
+      "answer": "(4 - π)/4"
+    },
+    {
+      "id": "ch14_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the probability that a number selected at random from the numbers 1, 2, 3, ... 35 is a multiple of 7.",
+      "answer": "1/7 (5/35)"
+    },
+
+    {
+      "id": "ch14_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "One card is drawn from a well-shuffled deck of 52 cards. Find the probability of getting (i) a king of red colour (ii) a face card (iii) a red face card.",
+      "answer": "(i) 1/26 (ii) 3/13 (iii) 3/26"
+    },
+    {
+      "id": "ch14_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A box contains 90 discs which are numbered from 1 to 90. If one disc is drawn at random from the box, find the probability that it bears (i) a two-digit number (ii) a perfect square number (iii) a number divisible by 5.",
+      "answer": "(i) 9/10 (ii) 1/10 (iii) 1/5"
+    },
+    {
+      "id": "ch14_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A bag contains 5 white marbles, 8 red marbles and 4 purple marbles. If we take a marble randomly, find probability of (i) red (ii) purple (iii) not purple.",
+      "answer": "(i) 8/17 (ii) 4/17 (iii) 13/17"
+    },
+    {
+      "id": "ch14_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Two different dice are thrown together. Find the probability that the numbers obtained have (i) even sum (ii) product less than 16.",
+      "answer": "(i) 1/2 (ii) Calculation required."
+    },
+    {
+      "id": "ch14_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A game consists of tossing a one rupee coin 3 times and noting its outcome each time. Hanif wins if all the tosses give the same result. Calculate the probability that Hanif will lose the game.",
+      "answer": "3/4 (6/8)"
+    },
+    {
+      "id": "ch14_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A lot consists of 144 ball pens of which 20 are defective. A customer will buy if it is good. Find probability that (i) customer buys it (ii) customer does not buy it.",
+      "answer": "(i) 31/36 (ii) 5/36"
+    },
+
+    {
+      "id": "ch14_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: CBL Survey.\nA survey on 1000 schools about computers. (Table given: 1-10, 11-20... computers).\n(i) Prob of school having >100 computers.\n(ii) Prob of school having <=50 computers.",
+      "answer": "(i) 0.08 (ii) 0.74"
+    },
+    {
+      "id": "ch14_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Spinner Game.\nSpinning two spinners (Red/Blue/Green). Making Purple = Red + Blue.\n(i) List outcomes.\n(ii) Prob of making purple.\n(iii) Fund collected if win=₹10, lose=₹5.",
+      "answer": "(ii) 1/9 (iii) Calculation required."
+    },
+
+    {
+      "id": "ch14_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "A child's game has 8 triangles (3 blue, rest red) and 10 squares (6 blue, rest red). One piece is lost. Find probability that it is (i) triangle (ii) square (iii) blue square (iv) red triangle.",
+      "answer": "(i) 4/9 (ii) 5/9 (iii) 1/3 (iv) 5/18"
+    },
+    {
+      "id": "ch14_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "From a pack of 52 cards, jacks, queens, kings and aces of red colour are removed. From the remaining, a card is drawn. Find probability of (i) black queen (ii) red card (iii) face card (iv) spade.",
+      "answer": "(i) 1/22 (ii) 9/22 (iii) 3/22 (iv) 13/44"
+    }
+  ]
+}

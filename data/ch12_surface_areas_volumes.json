@@ -1,0 +1,257 @@
+{
+  "chapter_name": "Surface Areas and Volumes",
+  "file_name": "ch12_surface_areas_volumes.json",
+  "questions": [
+    
+    {
+      "id": "ch12_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "If the radius of a cylinder is halved and height is doubled, then its curved surface area will:",
+      "options": ["Increase by 1", "Be the same", "Be doubled", "Be tripled"],
+      "answer": "(b) Be the same",
+      "explanation": "2π(r/2)(2h) = 2πrh."
+    },
+    {
+      "id": "ch12_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The total surface area of a solid hemisphere of radius r is:",
+      "options": ["2πr²", "3πr²", "4πr²", "πr²"],
+      "answer": "(b) 3πr²",
+      "explanation": "Curved area (2πr²) + Base area (πr²)."
+    },
+    {
+      "id": "ch12_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "A solid sphere of radius r is melted and recast into the shape of a solid cone of height r, then the radius of the base of the cone is:",
+      "options": ["r", "2r", "r/2", "√3r"],
+      "answer": "(b) 2r",
+      "explanation": "4/3 πr³ = 1/3 πR²r => 4r² = R² => R = 2r."
+    },
+    {
+      "id": "ch12_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is:",
+      "options": ["4πr²", "6πr²", "3πr²", "8πr²"],
+      "answer": "(a) 4πr²",
+      "explanation": "It becomes a sphere."
+    },
+    {
+      "id": "ch12_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The volume of the largest right circular cone that can be cut out from a cube of edge 4.2 cm is:",
+      "options": ["9.7 cm³", "77.6 cm³", "58.2 cm³", "19.4 cm³"],
+      "answer": "(d) 19.4 cm³",
+      "explanation": "r=2.1, h=4.2. Vol = 1/3 π(2.1)²(4.2) = 19.404."
+    },
+    {
+      "id": "ch12_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the radius of a sphere is doubled, then the ratio of the original and new surface areas is:",
+      "options": ["1:2", "1:4", "2:1", "4:1"],
+      "answer": "(b) 1:4",
+      "explanation": "4πr² : 4π(2r)² = 1 : 4."
+    },
+    {
+      "id": "ch12_1m_07",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): Total Surface area of the top is the sum of the curved surface area of the hemisphere and the curved surface area of the cone.\nReason (R): Top is made by fixing the plane surfaces of the hemisphere and cone together.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch12_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): If the diameter of a sphere is halved, its surface area becomes one-fourth.\nReason (R): Surface area of a sphere is proportional to the square of the radius.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+
+    {
+      "id": "ch12_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "2 cubes each of volume 64 cm³ are joined end to end. Find the surface area of the resulting cuboid.",
+      "answer": "160 cm²"
+    },
+    {
+      "id": "ch12_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The radius and height of a cylinder are in the ratio 2:3. If the volume is 1386 cm³, find the radius and height.",
+      "answer": "r = 6.66 cm, h = 9.99 cm"
+    },
+    {
+      "id": "ch12_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "A cylindrical pipe has an inner diameter of 7 cm and length 40 cm. Find its inner curved surface area.",
+      "answer": "880 cm²"
+    },
+    {
+      "id": "ch12_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The diameter of the hemisphere is 14 cm and the total height of the vessel is 13 cm. Find the inner surface area.",
+      "answer": "572 cm²"
+    },
+    {
+      "id": "ch12_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Two solid hemispheres of radius 3.5 cm are joined to make a structure. Find the surface area.",
+      "answer": "231 cm²"
+    },
+    {
+      "id": "ch12_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of its ends. Length is 14 mm, diameter is 5 mm. Find surface area.",
+      "answer": "220 mm²"
+    },
+
+    {
+      "id": "ch12_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A toy is in the form of a cone of radius 3.5 cm mounted on a hemisphere of same radius. The total height of the toy is 15.5 cm. Find the total surface area of the toy.",
+      "answer": "214.5 cm²"
+    },
+    {
+      "id": "ch12_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A cylindrical water tank is 1.5 m in diameter and 2.1 m high. How many litres of water can it hold?",
+      "answer": "3712.5 litres"
+    },
+    {
+      "id": "ch12_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of the same height and same diameter is hollowed out. Find the total surface area of the remaining solid.",
+      "answer": "18 cm² (approx)"
+    },
+    {
+      "id": "ch12_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A cubical block of side 7 cm is surmounted by a hemisphere. What is the greatest diameter the hemisphere can have? Find the surface area of the solid.",
+      "answer": "Diameter: 7 cm, Area: 332.5 cm²"
+    },
+    {
+      "id": "ch12_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "A hemispherical bowl of radius 10.5 cm is filled with soup. The soup is to be poured into cylindrical glasses of 200 ml capacity. How many glasses can be filled?",
+      "answer": "12 glasses"
+    },
+    {
+      "id": "ch12_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "The diameter of a roller is 84 cm and its length is 120 cm. It takes 500 complete revolutions to level a playground. Find the area of the playground.",
+      "answer": "1584 m²"
+    },
+
+    {
+      "id": "ch12_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Gulab Jamun.\nA gulab jamun contains sugar syrup up to about 30% of its volume. Each is shaped like a cylinder with two hemispherical ends (length 5cm, diameter 2.8cm).\n(i) Find volume of one gulab jamun.\n(ii) Find volume of syrup in 45 gulab jamuns.",
+      "answer": "(i) 25.05 cm³ (ii) 338 cm³"
+    },
+    {
+      "id": "ch12_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Circus Tent.\nA circus tent is cylindrical up to a height of 8 m and conical above it. The diameter of the base is 28 m and the total height is 18.5 m.\n(i) Find slant height of cone.\n(ii) Find floor area.\n(iii) Find area of cloth used.",
+      "answer": "(i) 17.5 m (ii) 616 m² (iii) 1474 m²"
+    },
+    {
+      "id": "ch12_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Tetra-Pack Milk.\n500 mL milk is packed in a cuboidal container (15x8x5 cm). These are packed in cartons (30x32x15 cm).\n(i) Find volume of carton.\n(ii) Find surface area of milk packet.\n(iii) How many packets in a carton?",
+      "answer": "(i) 14400 cm³ (ii) 470 cm² (iii) 24"
+    },
+    {
+      "id": "ch12_4m_04",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Pen Stand.\nA pen stand made of wood is in the shape of a cuboid with four conical depressions to hold pens. Cuboid dims: 15x10x3.5 cm. Cone radius 0.5, depth 1.4.\n(i) Find volume of wood in the entire stand.",
+      "answer": "523.53 cm³"
+    },
+
+    {
+      "id": "ch12_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "A container shaped like a right circular cylinder having diameter 12 cm and height 15 cm is full of ice cream. The ice cream is to be filled into cones of height 12 cm and diameter 6 cm, having a hemispherical shape on the top. Find the number of such cones which can be filled with ice cream.",
+      "answer": "10"
+    },
+    {
+      "id": "ch12_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "A vessel is in the form of an inverted cone. Its height is 8 cm and the radius of its top, which is open, is 5 cm. It is filled with water up to the brim. When lead shots, each of which is a sphere of radius 0.5 cm are dropped into the vessel, one-fourth of the water flows out. Find the number of lead shots dropped in the vessel.",
+      "answer": "100"
+    },
+    {
+      "id": "ch12_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "pyq"],
+      "text": "A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm, which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given that 1 cm³ of iron has approximately 8g mass.",
+      "answer": "892.26 kg"
+    },
+    {
+      "id": "ch12_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "A rocket is in the form a right Circular Cylinder closed at the lower end and surmounted by a cone with same radius as that of cylinder. The diameter and height of the cylinder are 9 m and 15 m, respectively. If the slant height of the conical portion is 7.5 m, find the total surface area and volume of the rocket.",
+      "answer": "TSA: 594 m², Vol: 1081.93 m³"
+    },
+    {
+      "id": "ch12_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "A solid consisting of a right circular cone of height 120 cm and radius 60 cm standing on a hemisphere of radius 60 cm is placed upright in a right circular cylinder full of water such that it touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is 60 cm and its height is 180 cm.",
+      "answer": "1.131 m³"
+    }
+  ]
+}

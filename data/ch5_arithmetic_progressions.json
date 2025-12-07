@@ -1,0 +1,347 @@
+{
+  "chapter_name": "Arithmetic Progressions",
+  "file_name": "ch5_arithmetic_progressions.json",
+  "questions": [
+    
+    {
+      "id": "ch5_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "pyq"],
+      "text": "The 10th term of the AP: 2, 7, 12, ... is:",
+      "options": ["47", "50", "52", "57"],
+      "answer": "(a) 47",
+      "explanation": "a=2, d=5. a10 = a + 9d = 2 + 45 = 47."
+    },
+    {
+      "id": "ch5_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The nth term of an A.P. is given by an = 3 + 4n. The common difference is:",
+      "options": ["7", "3", "4", "1"],
+      "answer": "(c) 4",
+      "explanation": "d = coefficient of n in linear expression."
+    },
+    {
+      "id": "ch5_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If the common difference of an AP is 3, then a20 - a15 is:",
+      "options": ["5", "15", "20", "25"],
+      "answer": "(b) 15",
+      "explanation": "a20 - a15 = (a+19d) - (a+14d) = 5d = 5(3) = 15."
+    },
+    {
+      "id": "ch5_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The sum of first 20 odd natural numbers is:",
+      "options": ["100", "210", "400", "420"],
+      "answer": "(c) 400",
+      "explanation": "Sum of first n odd numbers = n². 20² = 400."
+    },
+    {
+      "id": "ch5_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If p, q, r and s are in A.P. then r – q is:",
+      "options": ["s - p", "s - q", "s - r", "none of these"],
+      "answer": "(c) s - r",
+      "explanation": "In AP, difference between consecutive terms is constant."
+    },
+    {
+      "id": "ch5_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The sum of all two-digit odd numbers is:",
+      "options": ["2575", "2475", "2524", "2425"],
+      "answer": "(b) 2475",
+      "explanation": "AP: 11, 13...99. n=45. Sum = 45/2(11+99) = 2475."
+    },
+    {
+      "id": "ch5_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The value of x for which 2x, (x + 10) and (3x + 2) are the three consecutive terms of an AP is:",
+      "options": ["6", "-6", "18", "-18"],
+      "answer": "(a) 6",
+      "explanation": "2b = a+c => 2(x+10) = 2x + 3x + 2 => 2x+20 = 5x+2 => 3x=18 => x=6."
+    },
+    {
+      "id": "ch5_1m_08",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The number of multiples lie between n and n² which are divisible by n is:",
+      "options": ["n + 1", "n", "n - 1", "n - 2"],
+      "answer": "(d) n - 2",
+      "explanation": "Multiples are n*1... n*n. Total n multiples. Between means excluding first and last. So n-2."
+    },
+    {
+      "id": "ch5_1m_09",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert"],
+      "text": "Which term of the AP: 21, 18, 15, ... is -81?",
+      "options": ["34", "35", "36", "33"],
+      "answer": "(b) 35",
+      "explanation": "an = a+(n-1)d => -81 = 21 + (n-1)(-3) => n=35."
+    },
+    {
+      "id": "ch5_1m_10",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq_2020"],
+      "text": "The first term of an AP is p and the common difference is q, then its 10th term is:",
+      "options": ["p + 9q", "p - 9q", "p + 10q", "9p + q"],
+      "answer": "(a) p + 9q",
+      "explanation": "an = a + (n-1)d."
+    },
+    {
+      "id": "ch5_1m_11",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): Let the positive numbers a, b, c be in A.P., then 1/bc, 1/ac, 1/ab are also in A.P.\nReason (R): If each term of an A.P. is divided by abc, then the resulting sequence is also in A.P.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R is not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch5_1m_12",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): The value of n is 18, if a = 10, d = 5, an = 95.\nReason (R): The formula of general term an is an = a + (n-1)d.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R is not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true"
+    },
+    {
+      "id": "ch5_1m_13",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If the nth term of an AP is 2n² - 1, then the sum of the first n terms is n³.\nReason (R): The nth term of an AP is linear in n (an = An + B).",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(d) A is false but R is true",
+      "explanation": "nth term of AP is always linear. 2n²-1 is quadratic, so not an AP."
+    },
+
+    {
+      "id": "ch5_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Which term of the AP: 3, 8, 13, 18, ..., is 78?",
+      "answer": "16th term"
+    },
+    {
+      "id": "ch5_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the common difference of the AP 1/p, (1-p)/p, (1-2p)/p, ...",
+      "answer": "-1"
+    },
+    {
+      "id": "ch5_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the sum of first 8 multiples of 3.",
+      "answer": "108"
+    },
+    {
+      "id": "ch5_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find the 9th term from the end (towards the first term) of the A.P. 5, 9, 13, ..., 185.",
+      "answer": "153"
+    },
+    {
+      "id": "ch5_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the 31st term of an AP whose 11th term is 38 and the 16th term is 73.",
+      "answer": "178"
+    },
+    {
+      "id": "ch5_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "Subba Rao started work in 1995 at an annual salary of ₹ 5000 and received an increment of ₹ 200 each year. In which year did his income reach ₹ 7000?",
+      "answer": "11th year (2005)"
+    },
+    {
+      "id": "ch5_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Find how many two-digit numbers are divisible by 6.",
+      "answer": "15"
+    },
+    {
+      "id": "ch5_2m_08",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "For what value of k will k+9, 2k-1 and 2k+7 are the consecutive terms of an AP?",
+      "answer": "k = 18"
+    },
+
+    {
+      "id": "ch5_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "If the sum of the first 14 terms of an AP is 1050 and its first term is 10, find the 20th term.",
+      "answer": "200"
+    },
+    {
+      "id": "ch5_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "How many terms of the AP: 24, 21, 18, ... must be taken so that their sum is 78?",
+      "answer": "4 or 13"
+    },
+    {
+      "id": "ch5_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The angles of a triangle are in A.P., the least being half the greatest. Find the angles.",
+      "answer": "40°, 60°, 80°"
+    },
+    {
+      "id": "ch5_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The 4th term of an A.P. is zero. Prove that the 25th term of the A.P. is three times its 11th term.",
+      "answer": "Proof: a = -3d. a25 = -3d + 24d = 21d. a11 = -3d + 10d = 7d. 21d = 3(7d)."
+    },
+    {
+      "id": "ch5_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "The sum of the 4th and 8th terms of an AP is 24 and the sum of the 6th and 10th terms is 44. Find the first three terms of the AP.",
+      "answer": "-13, -8, -3"
+    },
+    {
+      "id": "ch5_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If the sum of the first n terms of an AP is 4n - n², what is the first term? What is the sum of first two terms? What is the second term? Similarly, find the 3rd, the 10th and the nth terms.",
+      "answer": "S1=3, S2=4, a2=1, a3=-1, a10=-15, an=5-2n"
+    },
+    {
+      "id": "ch5_3m_07",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Which term of the A.P. 3, 14, 25, 36, ... will be 99 more than its 25th term?",
+      "answer": "34th term"
+    },
+    {
+      "id": "ch5_3m_08",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If the sum of first 7 terms of an A.P is 49 and that of its first 17 terms is 289, find the sum of first n terms of the A.P.",
+      "answer": "n²"
+    },
+
+    {
+      "id": "ch5_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert", "ssm"],
+      "text": "Case Study: Potato Race.\nIn a potato race, a bucket is placed at the starting point, which is 5 m from the first potato, and the other potatoes are placed 3 m apart in a straight line. There are ten potatoes in the line.\n(i) Find the distance covered to pick up the 1st potato and return.\n(ii) Find the distance covered for the 2nd potato.\n(iii) Calculate the total distance the competitor has to run.",
+      "answer": "(i) 10m (ii) 16m (iii) 370m"
+    },
+    {
+      "id": "ch5_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: TV Production.\nIndia is a competitive manufacturing location. The production of TV sets in a factory increases uniformly by a fixed number every year. It produced 16000 sets in 6th year and 22600 in 9th year.\n(i) Find the production during the first year.\n(ii) Find the production during the 8th year.\n(iii) Find the total production during the first 3 years.",
+      "answer": "(i) 5000 (ii) 20400 (iii) 21600"
+    },
+    {
+      "id": "ch5_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Pocket Money.\nAnuj gets pocket money from his father everyday. Out of the pocket money, he saves Rs 2.75 on first day, Rs 3 on second day, Rs 3.25 on third day and so on.\n(i) What is the amount saved by Anuj on 14th day?\n(ii) What is the total amount saved by Anuj in 8 days?\n(iii) What is the amount saved by Anuj on 30th day?",
+      "answer": "(i) Rs 6 (ii) Rs 29 (iii) Rs 10"
+    },
+    {
+      "id": "ch5_4m_04",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Ladder Rungs.\nA ladder has rungs 25 cm apart. The rungs decrease uniformly in length from 45 cm at the bottom to 25 cm at the top. The top and the bottom rungs are 2.5 m apart.\n(i) How many rungs are there?\n(ii) What is the length of the wood required for the rungs?",
+      "answer": "(i) 11 rungs (ii) 385 cm"
+    },
+    {
+      "id": "ch5_4m_05",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ncert"],
+      "text": "Case Study: Spiral.\nA spiral is made up of successive semicircles, with centres alternately at A and B, starting with centre at A, of radii 0.5 cm, 1.0 cm, 1.5 cm, ...\n(i) Find the length of the first semicircle.\n(ii) What is the total length of such a spiral made up of thirteen consecutive semicircles?",
+      "answer": "(i) 1.57 cm (ii) 143 cm"
+    },
+
+    {
+      "id": "ch5_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm", "pyq"],
+      "text": "A contract on construction job specifies a penalty for delay of completion beyond a certain date as follows: Rs. 200 for the first day, Rs. 250 for the second day, Rs. 300 for the third day, etc. The penalty for each succeeding day being Rs. 50 more than for the preceding day. How much money the contractor has to pay as penalty, if he has delayed the work by 30 days?",
+      "answer": "Rs 27,750"
+    },
+    {
+      "id": "ch5_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm", "pyq"],
+      "text": "A sum of Rs 700 is to be used to give seven cash prizes to students of a school for their overall academic performance. If each prize is Rs 20 less than its preceding prize, find the value of each of the prizes.",
+      "answer": "160, 140, 120, 100, 80, 60, 40"
+    },
+    {
+      "id": "ch5_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "In a school, students thought of planting trees in and around the school to reduce air pollution. It was decided that the number of trees, that each section of each class will plant, will be the same as the class, in which they are studying, e.g., a section of class I will plant 1 tree, a section of class II will plant 2 trees and so on till class XII. There are three sections of each class. How many trees will be planted by the students?",
+      "answer": "234 trees"
+    },
+    {
+      "id": "ch5_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "200 logs are stacked in the following manner: 20 logs in the bottom row, 19 in the next row, 18 in the row next to it and so on. In how many rows are the 200 logs placed and how many logs are in the top row?",
+      "answer": "16 rows, 5 logs in top row"
+    },
+    {
+      "id": "ch5_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "An A.P. contains 37 terms. The sum of the three middle most terms is 225 and the sum of the last three is 429. Find out the A.P.",
+      "answer": "3, 7, 11, ..."
+    }
+  ]
+}

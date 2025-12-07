@@ -1,0 +1,251 @@
+{
+  "chapter_name": "Circles",
+  "file_name": "ch10_circles.json",
+  "questions": [
+    
+    {
+      "id": "ch10_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "ssm"],
+      "text": "How many tangents can a circle have?",
+      "options": ["One", "Two", "Infinite", "Zero"],
+      "answer": "(c) Infinite",
+      "explanation": "A circle has infinite points, so infinite tangents."
+    },
+    {
+      "id": "ch10_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ncert", "pyq"],
+      "text": "A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Length PQ is:",
+      "options": ["12 cm", "13 cm", "8.5 cm", "√119 cm"],
+      "answer": "(d) √119 cm",
+      "explanation": "PQ = √(OQ² - OP²) = √(144 - 25) = √119."
+    },
+    {
+      "id": "ch10_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80°, then ∠POA is equal to:",
+      "options": ["50°", "60°", "70°", "80°"],
+      "answer": "(a) 50°",
+      "explanation": "∠AOB = 100°. ∠POA = 1/2 ∠AOB = 50°."
+    },
+    {
+      "id": "ch10_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4 cm. The radius of the circle is:",
+      "options": ["3 cm", "4 cm", "5 cm", "√41 cm"],
+      "answer": "(a) 3 cm",
+      "explanation": "Radius = √(5² - 4²) = 3."
+    },
+    {
+      "id": "ch10_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "Two parallel lines touch the circle at points A and B. If area of the circle is 25π cm², then AB is:",
+      "options": ["5 cm", "8 cm", "10 cm", "25 cm"],
+      "answer": "(c) 10 cm",
+      "explanation": "Area=25π => r=5. Parallel tangents are at ends of diameter. AB = 10."
+    },
+    {
+      "id": "ch10_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "In figure, if ∠AOB = 125°, then ∠COD is equal to:",
+      "options": ["62.5°", "45°", "35°", "55°"],
+      "answer": "(d) 55°",
+      "explanation": "Opposite sides of quadrilateral circumscribing a circle subtend supplementary angles at centre. 180 - 125 = 55."
+    },
+    {
+      "id": "ch10_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "At one end A of a diameter AB of a circle of radius 5 cm, tangent XAY is drawn. The length of the chord CD parallel to XY and at a distance 8 cm from A is:",
+      "options": ["4 cm", "5 cm", "6 cm", "8 cm"],
+      "answer": "(d) 8 cm",
+      "explanation": "Distance from centre = 8-5=3. Chord length = 2*√(5²-3²) = 8."
+    },
+    {
+      "id": "ch10_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If length of a tangent from an external point to a circle is 8 cm, then length of the other tangent from the same point is 8 cm.\nReason (R): Lengths of tangents drawn from an external point to a circle are equal.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch10_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The tangents drawn at the ends of a diameter of a circle are parallel.\nReason (R): The angle between the tangent and the radius at the point of contact is 90°.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch10_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): In the figure, PA and PB are tangents. If ∠APB = 40°, then ∠AOB = 140°.\nReason (R): The angle between two tangents drawn from an external point is supplementary to the angle subtended by the line segment joining the points of contact at the centre.",
+      "options": ["Both A and R are true and R is correct explanation", "Both true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+
+    {
+      "id": "ch10_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that the tangents drawn at the ends of a diameter of a circle are parallel.",
+      "answer": "Proof using alternate interior angles = 90°."
+    },
+    {
+      "id": "ch10_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In figure, a circle touches all the four sides of a quadrilateral ABCD whose sides are AB = 6 cm, BC = 9 cm and CD = 8 cm. Find the length of side AD.",
+      "answer": "5 cm"
+    },
+    {
+      "id": "ch10_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the larger circle which touches the smaller circle.",
+      "answer": "8 cm"
+    },
+    {
+      "id": "ch10_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A quadrilateral ABCD is drawn to circumscribe a circle. Prove that AB + CD = AD + BC.",
+      "answer": "Proof using tangent lengths."
+    },
+    {
+      "id": "ch10_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In figure, if ∠ATO = 40°, find ∠AOB.",
+      "answer": "100°"
+    },
+    {
+      "id": "ch10_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In figure, common tangents AB and CD to the two circles intersect at E. Prove that AB = CD.",
+      "answer": "EA=EC, EB=ED => EA+EB=EC+ED => AB=CD."
+    },
+    {
+      "id": "ch10_2m_07",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If the angle between two tangents drawn from an external point P to a circle of radius a and centre O, is 60°, then find the length of OP.",
+      "answer": "2a"
+    },
+
+    {
+      "id": "ch10_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Prove that the parallelogram circumscribing a circle is a rhombus.",
+      "answer": "Proof using AB+CD=AD+BC property."
+    },
+    {
+      "id": "ch10_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert", "pyq"],
+      "text": "Prove that opposite sides of a quadrilateral circumscribing a circle subtend supplementary angles at the centre of the circle.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch10_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "In Figure, XY and X'Y' are two parallel tangents to a circle with centre O and another tangent AB with point of contact C intersecting XY at A and X'Y' at B. Prove that ∠ AOB = 90°.",
+      "answer": "Proof required."
+    },
+    {
+      "id": "ch10_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In figure, PQ is a chord of length 8 cm of a circle of radius 5 cm. The tangents at P and Q intersect at a point T. Find the length TP.",
+      "answer": "20/3 cm"
+    },
+    {
+      "id": "ch10_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "A triangle ABC is drawn to circumscribe a circle of radius 4 cm such that the segments BD and DC into which BC is divided by the point of contact D are of lengths 8 cm and 6 cm respectively. Find the sides AB and AC.",
+      "answer": "AB = 15 cm, AC = 13 cm"
+    },
+    {
+      "id": "ch10_3m_06",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In figure, AP and BP are tangents to a circle with centre O, such that AP = 5 cm and ∠APB = 60°. Find the length of chord AB.",
+      "answer": "5 cm (Equilateral triangle)"
+    },
+    {
+      "id": "ch10_3m_07",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "If a hexagon ABCDEF circumscribe a circle, prove that AB + CD + EF = BC + DE + FA.",
+      "answer": "Proof using tangent lengths."
+    },
+
+    {
+      "id": "ch10_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm", "pyq"],
+      "text": "Prove that the lengths of tangents drawn from an external point to a circle are equal.",
+      "answer": "Theorem 10.2 Proof."
+    },
+    {
+      "id": "ch10_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert", "ssm"],
+      "text": "Prove that the tangent at any point of a circle is perpendicular to the radius through the point of contact.",
+      "answer": "Theorem 10.1 Proof."
+    },
+    {
+      "id": "ch10_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "In two concentric circles, the radii are r and 6 cm. Chord CD of larger circle is a tangent to smaller circle. If PA=16cm and OP=20cm, find the length CD.",
+      "answer": "12√3 cm"
+    },
+    {
+      "id": "ch10_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "Tangents PQ and PR are drawn from an external point P to a circle with centre O, such that ∠RPQ = 30°. A chord RS is drawn parallel to the tangent PQ. Find ∠RQS.",
+      "answer": "30°"
+    }
+  ]
+}

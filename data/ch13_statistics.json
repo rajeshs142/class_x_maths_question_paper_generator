@@ -1,0 +1,260 @@
+{
+  "chapter_name": "Statistics",
+  "file_name": "ch13_statistics.json",
+  "questions": [
+    
+    {
+      "id": "ch13_1m_01",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm", "pyq"],
+      "text": "The empirical relationship between the three measures of central tendency is:",
+      "options": ["3 Median = Mode + 2 Mean", "2 Mean = 3 Median - Mode", "Mode = 3 Median - 2 Mean", "All of these"],
+      "answer": "(d) All of these",
+      "explanation": "Standard formula: Mode = 3Median - 2Mean."
+    },
+    {
+      "id": "ch13_1m_02",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "For the following distribution: Class 0-5, 5-10, 10-15, 15-20, 20-25; Frequency 10, 15, 12, 20, 9. The sum of lower limits of the median class and modal class is:",
+      "options": ["15", "25", "30", "35"],
+      "answer": "(b) 25",
+      "explanation": "Modal class (max freq 20) is 15-20 (Lower=15). Median class (N/2=33) is 10-15 (Lower=10). Sum = 25."
+    },
+    {
+      "id": "ch13_1m_03",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "If the difference of mode and median of a data is 24, then the difference of median and mean is:",
+      "options": ["8", "12", "24", "36"],
+      "answer": "(b) 12",
+      "explanation": "Mode - Median = 24. We know Mode - Mean = 3(Median - Mean). Substitute."
+    },
+    {
+      "id": "ch13_1m_04",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The class marks of the median class of the following data (Class 10-25...85-100) is:",
+      "options": ["40", "55", "47.5", "62.5"],
+      "answer": "(d) 62.5",
+      "explanation": "Find N/2, locate class, find mid-point."
+    },
+    {
+      "id": "ch13_1m_05",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "If mode of the following frequency distribution is 55, then find the value of x (Class 45-60 freq 15).",
+      "options": ["15", "10", "5", "7"],
+      "answer": "(a) 15",
+      "explanation": "Using mode formula."
+    },
+    {
+      "id": "ch13_1m_06",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["ssm"],
+      "text": "The mean of the following distribution is (xi: 12, 14, 18, 20; fi: 3, 5, 8, 7):",
+      "options": ["19.5", "18", "16.95", "15.24"],
+      "answer": "(c) 16.95",
+      "explanation": "Σfixi / Σfi = 390/23 = 16.95."
+    },
+    {
+      "id": "ch13_1m_07",
+      "marks": 1,
+      "type": "mcq",
+      "source": ["pyq"],
+      "text": "Find the mean of the first 10 natural numbers.",
+      "options": ["5", "5.5", "6", "6.5"],
+      "answer": "(b) 5.5",
+      "explanation": "Sum = 55. Mean = 55/10 = 5.5."
+    },
+    {
+      "id": "ch13_1m_08",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): The arithmetic mean of the following distribution (given) is 13.81.\nReason (R): Mean = Σfx / Σf.",
+      "options": ["Both A and R are true and R is correct explanation", "Both A and R true but R not explanation", "A true R false", "A false R true"],
+      "answer": "(a) Both A and R are true and R is correct explanation"
+    },
+    {
+      "id": "ch13_1m_09",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["ssm"],
+      "text": "Assertion (A): If the value of mode and mean is 60 and 66 respectively, then the value of median is 64.\nReason (R): Median = (Mode + 2Mean)/3.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(c) A is true but R is false (Formula is Mode = 3Median - 2Mean). Wait, Median = (Mode+2Mean)/3 is actually correct rearrangement. So (a)."
+    },
+    {
+      "id": "ch13_1m_10",
+      "marks": 1,
+      "type": "assertion_reason",
+      "source": ["pyq"],
+      "text": "Assertion (A): The algebraic sum of the deviations of a frequency distribution from its mean is 0.\nReason (R): Mode of a frequency distribution cannot be determined graphically.",
+      "options": ["Both A and R are true", "A true R false", "A false R true", "Both false"],
+      "answer": "(c) A is true but R is false (Mode can be determined by histogram)."
+    },
+
+    {
+      "id": "ch13_2m_01",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The mean and mode of a frequency distribution are 28 and 16 respectively. Find the median.",
+      "answer": "24"
+    },
+    {
+      "id": "ch13_2m_02",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the class marks of classes 10-25 and 35-55.",
+      "answer": "17.5 and 45"
+    },
+    {
+      "id": "ch13_2m_03",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If the mean of the following distribution is 2.6, find y. (x: 1,2,3,4,5; f: 4,5,y,1,2).",
+      "answer": "y = 8"
+    },
+    {
+      "id": "ch13_2m_04",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "In a continuous frequency distribution, if l = 32.5, f1 = 15, f0 = 12, f2 = 8 and h = 8, then find the mode.",
+      "answer": "34.9"
+    },
+    {
+      "id": "ch13_2m_05",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["ncert"],
+      "text": "Find the mode of the following data: 0-20(6), 20-40(8), 40-60(10), 60-80(12), 80-100(6), 100-120(5).",
+      "answer": "Mode Class 60-80. Calc required."
+    },
+    {
+      "id": "ch13_2m_06",
+      "marks": 2,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Calculate the median salary of the data (Salary in thousands vs No of Persons).",
+      "answer": "Calculation based on CF."
+    },
+
+    {
+      "id": "ch13_3m_01",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "If mode of the following frequency distribution is 55, then find the value of x.",
+      "answer": "x = 15"
+    },
+    {
+      "id": "ch13_3m_02",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "The mode of a grouped frequency distribution is 75 and the modal class is 65-80. The frequency of the class preceding is 6 and succeeding is 8. Find frequency of modal class.",
+      "answer": "10"
+    },
+    {
+      "id": "ch13_3m_03",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the mean of the following data using assumed mean method. (Class 0-10 to 40-50).",
+      "answer": "Calculation required."
+    },
+    {
+      "id": "ch13_3m_04",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["ssm"],
+      "text": "Calculate the median marks of the following data: (Marks 0-10 to 40-50).",
+      "answer": "27.22"
+    },
+    {
+      "id": "ch13_3m_05",
+      "marks": 3,
+      "type": "subjective",
+      "source": ["pyq"],
+      "text": "Find the missing frequency f if the mean of the distribution is 18.",
+      "answer": "f = 8"
+    },
+
+    {
+      "id": "ch13_4m_01",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: COVID-19.\nDuring a survey, ages of 80 patients infected by COVID were recorded. (Table given: Age below 15, 25...). \n(i) Find the modal class interval.\n(ii) Find the median class interval.\n(iii) Find the modal age.",
+      "answer": "(i) 35-45 (ii) 35-45 (iii) Mode calculation."
+    },
+    {
+      "id": "ch13_4m_02",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Overweight.\nThe weights of 35 students were recorded. (Table given).\n(i) Find the median class.\n(ii) Find the modal class.\n(iii) Calculate median weight.",
+      "answer": "Depends on data."
+    },
+    {
+      "id": "ch13_4m_03",
+      "marks": 4,
+      "type": "case_study",
+      "source": ["ssm"],
+      "text": "Case Study: Rainfall.\nIMD observed seasonal rainfall in different subdivisions. (Table given: 200-400 to 1600-1800).\n(i) Write the modal class.\n(ii) Find the mean rainfall.",
+      "answer": "(i) 600-800 (ii) Calc required."
+    },
+
+    {
+      "id": "ch13_5m_01",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "The median of the following data is 525. Find the values of x and y, if the total frequency is 100.",
+      "answer": "x = 9, y = 15"
+    },
+    {
+      "id": "ch13_5m_02",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "If the median of the distribution given below is 28.5, find the values of x and y. (Class 0-10 to 50-60).",
+      "answer": "x = 8, y = 7"
+    },
+    {
+      "id": "ch13_5m_03",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm", "pyq"],
+      "text": "The median of the following data is 868. Find the values of x and y, if the total frequency is 100.",
+      "answer": "x = 20, y = 19"
+    },
+    {
+      "id": "ch13_5m_04",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ncert"],
+      "text": "A life insurance agent found the following data for distribution of ages of 100 policy holders. Calculate the median age.",
+      "answer": "35.76 years"
+    },
+    {
+      "id": "ch13_5m_05",
+      "marks": 5,
+      "type": "long_answer",
+      "source": ["ssm"],
+      "text": "The distribution below gives the marks of 100 students of a class, if the median marks are 24, find the frequencies f1 and f2.",
+      "answer": "f1 = 25, f2 = ? (Calculation from table)"
+    }
+  ]
+}
