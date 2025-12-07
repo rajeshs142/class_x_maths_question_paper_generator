@@ -1,0 +1,39 @@
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    #paper-view {
+        display: block !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .break-before-page {
+        page-break-before: always;
+    }
+    .break-inside-avoid {
+        break-inside: avoid;
+    }
+    body {
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact;
+    }
+
+    /* Hide the Source Tag if you want a clean paper (Optional - remove to keep it) */
+    /* .source-tag { display: none !important; } */
+    
+    /* Force Page Breaks */
+    .page-break-before { page-break-before: always; }
+    
+    /* Prevent questions from being cut in half */
+    .break-inside-avoid { break-inside: avoid; }
+}
+
+/* Styling for the Source Tag */
+.source-tag {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 2px;
+}

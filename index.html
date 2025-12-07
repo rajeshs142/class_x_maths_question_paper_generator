@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE X Math Paper Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="no-print bg-white shadow-lg mb-8">
+        <div class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold text-indigo-700 mb-6">CBSE Class 10 Math Paper Generator</h1>
+
+            <!-- Source Settings -->
+            <div class="mb-6 p-4 bg-indigo-50 rounded-lg border border-indigo-100">
+                <h3 class="font-bold text-indigo-900 mb-2">1. Select Sources:</h3>
+                <div class="flex gap-6">
+                    <label class="cursor-pointer flex items-center"><input type="checkbox" class="src-cb w-5 h-5 mr-2" value="ncert" checked> NCERT Textbook</label>
+                    <label class="cursor-pointer flex items-center"><input type="checkbox" class="src-cb w-5 h-5 mr-2" value="pyq" checked> PYQ (Past Years)</label>
+                    <label class="cursor-pointer flex items-center"><input type="checkbox" class="src-cb w-5 h-5 mr-2" value="ssm" checked> Support Material</label>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex border-b-2 border-gray-200 mb-6">
+                <button id="tab-mock" class="px-6 py-3 font-bold text-indigo-600 border-b-2 border-indigo-600 bg-indigo-50" onclick="setMode('mock')">Board Mock (80M)</button>
+                <button id="tab-custom" class="px-6 py-3 text-gray-500 hover:text-indigo-600" onclick="setMode('custom')">Custom Test</button>
+            </div>
+
+            <!-- Mock Mode Info -->
+            <div id="panel-mock" class="block">
+                <p class="text-gray-600 mb-4">Generates a strict CBSE Board Pattern paper covering the full syllabus.</p>
+                <div class="grid grid-cols-5 gap-4 text-sm text-gray-500 mb-4">
+                    <div>1 Mark: <strong>20 Q</strong></div>
+                    <div>2 Marks: <strong>5 Q</strong></div>
+                    <div>3 Marks: <strong>6 Q</strong></div>
+                    <div>5 Marks: <strong>4 Q</strong></div>
+                    <div>4 Marks (Case): <strong>3 Q</strong></div>
+                </div>
+                <button onclick="handleGenerate()" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-indigo-700 shadow-lg transition">Generate Full Paper</button>
+            </div>
+
+            <!-- Custom Mode Info -->
+<div id="panel-custom" class="hidden">
+    
+    <!-- 1. Marks Configuration -->
+    <div class="flex gap-4 items-center mb-4 bg-gray-50 p-3 rounded">
+        <label class="font-bold">Total Marks:</label>
+        <input type="number" id="custom-marks" value="20" class="border-2 border-gray-300 rounded p-2 w-24 text-center" min="5" max="100">
+        <span class="text-sm text-gray-500">(Questions will be picked until this limit is reached)</span>
+    </div>
+
+    <!-- 2. Filter by Marks (The New Feature) -->
+    <div class="mb-4">
+        <h3 class="font-bold mb-2 text-sm uppercase text-gray-600 tracking-wider">Question Types to Include:</h3>
+        <div class="flex flex-wrap gap-4">
+            <label class="flex items-center bg-white border px-3 py-2 rounded shadow-sm cursor-pointer hover:bg-blue-50">
+                <input type="checkbox" class="mark-cb w-5 h-5 mr-2 text-blue-600" value="1" checked> 
+                1 Mark (MCQs)
+            </label>
+            <label class="flex items-center bg-white border px-3 py-2 rounded shadow-sm cursor-pointer hover:bg-blue-50">
+                <input type="checkbox" class="mark-cb w-5 h-5 mr-2 text-blue-600" value="2" checked> 
+                2 Marks (VSA)
+            </label>
+            <label class="flex items-center bg-white border px-3 py-2 rounded shadow-sm cursor-pointer hover:bg-blue-50">
+                <input type="checkbox" class="mark-cb w-5 h-5 mr-2 text-blue-600" value="3" checked> 
+                3 Marks (SA)
+            </label>
+            <label class="flex items-center bg-white border px-3 py-2 rounded shadow-sm cursor-pointer hover:bg-blue-50">
+                <input type="checkbox" class="mark-cb w-5 h-5 mr-2 text-blue-600" value="4" checked> 
+                4 Marks (Case)
+            </label>
+            <label class="flex items-center bg-white border px-3 py-2 rounded shadow-sm cursor-pointer hover:bg-blue-50">
+                <input type="checkbox" class="mark-cb w-5 h-5 mr-2 text-blue-600" value="5" checked> 
+                5 Marks (Long)
+            </label>
+        </div>
+    </div>
+
+    <!-- 3. Chapter Selection -->
+    <h3 class="font-bold mb-2 text-sm uppercase text-gray-600 tracking-wider">Select Chapters:</h3>
+    <!-- Select All / Deselect All Buttons -->
+    <div class="mb-2 text-xs flex gap-2">
+        <button onclick="toggleChapters(true)" class="text-blue-600 hover:underline">Select All</button> |
+        <button onclick="toggleChapters(false)" class="text-blue-600 hover:underline">Deselect All</button>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-6 h-48 overflow-y-auto border p-2 rounded" id="chapter-list">
+        <!-- Chapters Injected by JS -->
+    </div>
+
+    <button onclick="handleGenerate()" class="w-full bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 shadow-lg transition">GENERATE CUSTOM TEST</button>
+</div>
+
+            <!-- History Section -->
+            <div class="mt-8 pt-6 border-t">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-gray-700">Generated History</h3>
+                    <button onclick="clearHistory()" class="text-xs text-red-500 hover:underline">Clear History</button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border text-sm">
+                        <thead>
+                            <tr class="bg-gray-100 text-left">
+                                <th class="p-2 border">Date</th>
+                                <th class="p-2 border">Type</th>
+                                <th class="p-2 border">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAPER CONTAINER -->
+    <div id="paper-view" class="hidden print-area max-w-[210mm] mx-auto bg-white p-12 shadow-2xl mb-10 min-h-screen">
+        
+        <!-- Paper Header -->
+        <div class="text-center border-b-2 border-black pb-4 mb-6">
+            <input type="text" value="MOCK SCHOOL PRESENTS" class="text-3xl font-serif font-bold text-center w-full border-none focus:ring-0 p-0 mb-2" />
+            <input type="text" value="MOCK EXAMINATION" class="text-xl font-serif font-bold text-center w-full border-none focus:ring-0 p-0 mb-2" />
+
+            <!-- <h2 class="text-xl font-serif font-bold">MOCK EXAMINATION</h2> -->
+            <div class="flex justify-between mt-6 font-serif font-bold text-lg">
+                <span>Class: X</span>
+                <span>Subject: Mathematics</span>
+            </div>
+            <div class="flex justify-between mt-1 font-serif text-lg">
+                <span id="paper-time">Time: 3 Hours</span>
+                <span id="paper-marks">Max Marks: 80</span>
+            </div>
+            <!-- Criteria Tag (Visible only on screen) -->
+            <div id="paper-meta" class="no-print mt-2 text-xs text-gray-400 font-mono"></div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="mb-6 font-serif text-sm italic border-b border-gray-300 pb-4">
+            <p><strong>General Instructions:</strong></p>
+            <ul class="list-disc ml-5">
+                <li>This question paper contains 5 sections A, B, C, D and E.</li>
+                <li>Section A has 20 MCQs carrying 1 mark each.</li>
+                <li>Section B has 5 questions carrying 02 marks each.</li>
+                <li>Section C has 6 questions carrying 03 marks each.</li>
+                <li>Section D has 4 questions carrying 05 marks each.</li>
+                <li>Section E has 3 case based integrated units of assessment (04 marks each).</li>
+            </ul>
+        </div>
+
+        <!-- Questions Render Area -->
+        <div id="questions-container" class="font-serif text-justify">
+            <!-- Injected by JS -->
+        </div>
+
+        <!-- Answer Key -->
+        <div id="answer-key-container" class="hidden mt-12 pt-6 border-t-4 border-black break-before-page">
+            <h2 class="text-center font-bold text-xl underline mb-6">MARKING SCHEME / ANSWERS</h2>
+            <div id="answer-list"></div>
+        </div>
+
+    </div>
+
+    <!-- Floating Controls -->
+    <div id="controls" class="hidden no-print fixed bottom-6 right-6 flex flex-col gap-3">
+        <button onclick="window.print()" class="bg-blue-600 text-white p-4 rounded-full shadow-xl hover:bg-blue-700" title="Print PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
+        </button>
+        <button onclick="window.print()" class="bg-blue-600 text-white p-4 rounded-full shadow-xl hover:bg-blue-700 flex items-center gap-2 group transition-all duration-300" title="Download PDF">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
+    <!-- Text appears on hover -->
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap">Download PDF</span>
+</button>
+        <button onclick="toggleAnswers()" class="bg-green-600 text-white p-4 rounded-full shadow-xl hover:bg-green-700" title="Toggle Answers">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+        </button>
+        <button onclick="location.reload()" class="bg-gray-600 text-white p-4 rounded-full shadow-xl hover:bg-gray-700" title="Back to Dashboard">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="storage.js"></script>
+    <script src="generator.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
